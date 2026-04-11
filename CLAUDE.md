@@ -78,12 +78,53 @@ Update these to `https://umasscds.github.io/campusgenai-docs/` (or the custom do
 
 ## Moving to a custom domain
 
-When this site moves to `docs.campusgenai.org`:
+**When this site moves to `docs.campusgenai.org`, do these steps in order:**
 
-1. Update `astro.config.mjs`: `site: 'https://docs.campusgenai.org'`, `base: '/'`
-2. Update all internal links in content (currently use `/campusgenai-docs/` prefix)
-3. Update the marketing site's two cross-links above
-4. Configure DNS and custom domain in GitHub Pages settings
+### 1. Update astro.config.mjs
+```js
+// Change:
+site: 'https://umasscds.github.io',
+base: '/campusgenai-docs',
+
+// To:
+site: 'https://docs.campusgenai.org',
+base: '/',
+```
+
+### 2. Fix internal links in content files
+All cross-links between docs pages currently use the `/campusgenai-docs/` prefix.
+A single find-and-replace handles this:
+
+```bash
+# In the campusgenai-docs repo root:
+grep -r "/campusgenai-docs/" src/content/docs/ --include="*.md" -l
+# Then replace /campusgenai-docs/ → / in those files
+```
+
+Files affected (all of them — every cross-link uses the prefix):
+- `src/content/docs/index.md` (hero action links)
+- `src/content/docs/getting-started/quick-guide.md`
+- `src/content/docs/platform/working-with-files.md`
+- `src/content/docs/platform/using-agents.md`
+- `src/content/docs/models/model-comparison.md`
+
+### 3. Update the marketing site (repo: campusgenai-site / local: campusgenai-update)
+Two files need updating:
+
+| File | Line | Current value | Change to |
+|------|------|---------------|-----------|
+| `src/layouts/BaseLayout.astro` | 228 | `url('/learn#guides')` | `https://docs.campusgenai.org/` |
+| `src/pages/launch/ignition.astro` | 96 | `"/learn#guides"` | `https://docs.campusgenai.org/skills/prompt-engineering/` (or wherever Platform Guides lands) |
+
+Also update the "Need help?" links in every docs page — they currently point to
+`https://umasscds.github.io/campusgenai-site/learn`, which should become
+`https://campusgenai.org/learn` (or whatever the marketing site domain is by then).
+
+### 4. DNS and GitHub Pages
+- Add a CNAME record: `docs.campusgenai.org` → `umasscds.github.io`
+- In the GitHub repo settings (Settings → Pages), add the custom domain
+- GitHub will provision an SSL certificate automatically (takes ~10 min)
+- Add a `public/CNAME` file to the repo containing `docs.campusgenai.org` so it persists across deploys
 
 ## What NOT to do
 
