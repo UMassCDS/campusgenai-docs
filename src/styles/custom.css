@@ -1,0 +1,28 @@
+/* campusGenAI docs theme
+   Matches the marketing site's visual identity — Inter font, rust accent, slate surfaces */
+
+:root {
+	/* Accent — rust #c2410c matching the marketing site */
+	--sl-color-accent-low: #451a03;
+	--sl-color-accent: #c2410c;
+	--sl-color-accent-high: #fed7aa;
+
+	/* Surface/text colors matching marketing site slate palette */
+	--sl-color-white: #f8fafc;
+	--sl-color-gray-1: #e2e8f0;
+	--sl-color-gray-2: #94a3b8;
+	--sl-color-gray-3: #64748b;
+	--sl-color-gray-4: #334155;
+	--sl-color-gray-5: #1e293b;
+	--sl-color-gray-6: #0f172a;
+	--sl-color-black: #0f172a;
+
+	/* Font */
+	--sl-font: 'Inter', sans-serif;
+}
+
+[data-theme='light'] {
+	--sl-color-accent-low: #fff7ed;
+	--sl-color-accent: #c2410c;
+	--sl-color-accent-high: #7c2d12;
+}
