@@ -9,10 +9,10 @@ Agents are AI assistants pre-configured with specific instructions, a chosen mod
 
 An agent configuration includes:
 
-- **Instructions** — how the agent should behave, what tone to use, what to include or exclude
-- **Model** — which AI model the agent uses
-- **Files** (optional) — reference documents the agent can draw from in every conversation
-- **Tools** (optional) — capabilities like web search or code execution, if enabled in your deployment
+- **Instructions**: How the agent should behave, what tone to use, what to include or exclude
+- **Model**: Which AI model the agent uses
+- **Files** (optional): Reference documents the agent can draw from in every conversation
+- **Tools** (optional): Capabilities like web search or code execution, if enabled in your deployment
 
 ## Creating an agent
 
@@ -23,6 +23,8 @@ An agent configuration includes:
    - **Instructions** — detailed behavioral instructions (see below)
    - **Model** — choose based on the task; see [Model Comparison](/campusgenai-docs/models/model-comparison/)
    - **Files** — upload any reference documents
+   - **Tools** — add Google search, image generation, Wolfram, etc.
+   - **MCPs** — add document generation capabilities and more
 4. Save and start a conversation with the agent
 
 ## Writing good instructions
@@ -62,9 +64,9 @@ Common agent types across campusGenAI organizations:
 
 ## Sharing agents
 
-Agents you create are private to your organization by default. You can publish useful agents to the community library — when you do, every organization on the platform can use that agent. Only the agent's instructions are shared; your conversations and data remain private.
+Agents you create are private to you by default. You can share useful agents with specific users or publicly. When you share publicly, everyone on the platform can use that agent. Whether shared users can view or edit the agent's configuration depends on which permission level you choose.
 
-To publish an agent: open the agent settings and look for the "Publish to community library" option.
+To share an agent with everyone: open the agent settings and look for the "Share with everyone" option. Then, select everyone's permission level.
 
 ---
 

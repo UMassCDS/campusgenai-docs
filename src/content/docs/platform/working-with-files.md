@@ -12,6 +12,8 @@ description: Upload files to campusGenAI and use them with AI models and agents.
 
 Files are attached per-message. If you want the AI to continue referencing a file in the same conversation, you don't need to re-upload — the model retains context from earlier in the conversation.
 
+In a new conversation, you can re-attach a previously uploaded file without uploading it again: open the **Attached Files** section in the sidebar (paperclip icon) and select the file from there.
+
 ## Supported file types
 
 | Type | Formats |
@@ -43,6 +45,8 @@ Be specific about what you want. "Summarize this" works, but "identify the three
 
 ### Spreadsheet and data analysis
 
+campusGenAI is useful for quick questions about your data — spotting patterns, summarizing contents, identifying missing values, or talking through what an analysis should look like. For complex work like pivot tables, statistical modeling, or multi-step formulas, it works best as a thinking partner: use it to plan your approach or interpret results, then carry out the analysis in Excel, Google Sheets, or a tool like R or Python.
+
 Upload a CSV or spreadsheet and ask:
 
 ```
@@ -50,11 +54,15 @@ What are the top 5 trends in this dataset?
 ```
 
 ```
-Create a summary table showing totals by category.
+Summarize this data by category.
 ```
 
 ```
 Which rows have missing values?
+```
+
+```
+How would I calculate a month-over-month growth rate for this data in Excel?
 ```
 
 ### Code review

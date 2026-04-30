@@ -1,15 +1,15 @@
 ---
-title: Admin Dashboard
+title: Admin Portal
 description: Platform administration — user management, usage analytics, and configuration for campusGenAI administrators.
 ---
 
-The Admin Dashboard is available to designated administrators in each campusGenAI deployment. It provides tools for managing users, monitoring usage, and configuring platform behavior.
+The Admin Portal is available to designated administrators in each campusGenAI deployment. It provides tools for managing users, monitoring usage, and configuring platform behavior.
 
-## Accessing the dashboard
+## Accessing the portal
 
 Admin access is role-based — only accounts with administrator privileges can see the dashboard. If you need admin access, contact your institution's campusGenAI contact or IT department.
 
-Once you have access, look for the **Admin** link in the platform sidebar or navigate through Settings.
+Once you have access, check with your campusGenAI contact or IT admin for the link to your portal. The URL varies depending on the deployment. 
 
 ## User management
 
@@ -17,10 +17,10 @@ Once you have access, look for the **Admin** link in the platform sidebar or nav
 
 The Users section shows all accounts in your deployment:
 
-- View a list of all registered users with login status and last activity
-- Enable or disable individual user accounts
-- Assign or remove administrator roles
-- Filter by activity, role, or registration date
+- View a list of all registered users with their role, groups they are in, remaining balance, total storage used, and account creation date
+- Assign or remove roles for a user
+- Edit a user's balance
+- Reset a user's password
 
 ### Access control
 
