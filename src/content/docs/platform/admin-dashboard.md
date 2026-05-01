@@ -15,29 +15,38 @@ Once you have access, check with your campusGenAI contact or IT admin for the li
 
 ### Viewing and managing users
 
-The Users section shows all accounts in your deployment:
+The **Users** section shows all accounts in your deployment:
 
 - View a list of all registered users with their role, groups they are in, remaining balance, total storage used, and account creation date
 - Assign or remove roles for a user
 - Edit a user's balance
 - Reset a user's password
 
-### Access control
+### Define roles
 
-Use the access controls to:
+The **Roles** section allows you to create a role and define that role's **permissions** and **grants**.
 
-- Set which users or groups can access the platform
-- Manage group-based permissions if your deployment supports them
-- Enforce usage policies by disabling accounts that violate them
+- **Permissions** control what users with this role can do inside the main application — such as creating or sharing agents and prompts, using bookmarks, accessing the agent center, and other features.
+- **Grants** control what users with this role can see and do inside the admin portal. Enabling a grant gives all members of this role access to the corresponding section or action.
+
+### Manage groups
+
+Create a group and manage it's permissions and members.
+
+- Manage members of a group
+- Set global permissions for a group, such as allowed models, agent sharing permissions, storage limits, and balance settings.
 
 ### Model access per user
 
-You can control which AI models are available to specific users or groups. To configure:
+You can control which AI models are available to specific users or groups. 
 
-1. Go to **Admin → Users** and select a user or group
-2. Open the **Model Access** settings
-3. Enable or disable specific models
-4. Save changes — they take effect on the user's next login
+To configure a group's model access:
+
+1. Go to **Groups** and create or select a group — you can add multiple users to the group, or just one
+2. If you're editing an exisiting group, click **Edit Settings** (the gear icon) under Actions.
+3. Under Global Permissions, click **Allowed Models**
+4. Enable or disable specific models
+5. Save changes
 
 ## Usage analytics
 
@@ -50,32 +59,24 @@ The main analytics view shows platform-wide activity:
 - Token usage by model
 - Most active users or departments
 
-### Per-user and per-model reports
-
-Drill into usage data to understand patterns:
-
-- **Per-user breakdowns** — see which users are most active, and which haven't logged in
-- **Model distribution** — see which models are being used and in what volume
-- **Peak usage times** — useful for capacity planning
-- **Cost allocation** — if your deployment tracks costs, view breakdowns by department or group
-
-Use these reports to understand adoption, identify power users who might mentor colleagues, and find departments that haven't engaged yet.
-
 ## Platform configuration
 
 ### Available models
 
-Enable or disable models for your entire deployment:
+Enable, disable, and reorder models for your entire deployment:
 
-1. Go to **Admin → Models**
-2. Toggle models on or off
-3. Set a default model for new users
-
-Changes take effect immediately. Users currently in a conversation are not affected until they start a new one.
+1. Go to **Configuration → ModelSpecs**
+2. Disable models as needed
+3. Set a default model for users
+4. Drag and drop models into the order you'd like
 
 ### Announcements
 
-Some deployments support sending platform-wide announcements that appear in the interface. Use this to communicate about outages, new models, or policy changes.
+Some deployments support sending platform-wide announcements that appear in the interface upon login. Use this to communicate about outages, new models, or policy changes. To edit this:
+1. Go to Configuration **Configuration → Terms of Service**
+2. Edit the text using markdown formatting
+3. Click **Preview** to preview what it will look like
+4. Save changes
 
 ### Platform settings
 
@@ -86,7 +87,7 @@ Depending on your deployment type, you may be able to configure:
 - Default conversation settings
 - Data retention policies
 
-Contact the campusGenAI team at campusgenai@umass.edu for changes that require backend configuration.
+Contact the campusGenAI team for changes that require backend configuration.
 
 ## Best practices
 
