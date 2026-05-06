@@ -34,6 +34,17 @@ See [Model Comparison](/campusgenai-docs/models/model-comparison/) for guidance 
 
 **Conversation context:** Each conversation has its own context window. If a conversation becomes very long, older messages may fall outside the model's context. For long-running projects, it's often better to start a new conversation with a fresh summary of where you are.
 
+## Temporary chat
+
+Temporary chat mode lets you have a conversation that isn't saved to your history. It won't appear in the sidebar when the session ends and can't be returned to later.
+
+Use it when:
+- You're working with content you'd rather not keep on record
+- You want a clean, one-off exchange without cluttering your conversation history
+- You're exploring a topic and want the session to stay ephemeral
+
+To start a temporary chat, look for the **Temporary chat** option in the new conversation menu or sidebar. The interface will indicate that the conversation is not being saved.
+
 ## Attaching files
 
 Use the attachment button (paperclip icon) in the input area to upload documents. See [Working with Files](/campusgenai-docs/platform/working-with-files/) for supported formats and how to work with uploaded content.

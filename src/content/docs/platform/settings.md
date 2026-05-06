@@ -44,6 +44,10 @@ Some institutions allocate a token or usage balance per user. If your deployment
 - Balance resets on a schedule set by your administrator
 - If you approach or exceed your balance, contact your administrator
 
+If your balance drops to zero, the platform will show a notification and you won't be able to send messages until your balance is refreshed — either on its scheduled reset or manually by your administrator.
+
+Some deployments also track **file storage usage** alongside token balance. You can view your storage consumption in the same **Settings → Usage** area.
+
 ## Model access
 
 Not all models are available to all users. Your administrator controls which models are enabled for your account. If you need access to a specific model that isn't showing in your model selector, contact your IT department.

@@ -15,22 +15,32 @@ Model availability varies by deployment. Not all models listed here may be avail
 
 | Model | Provider | Best for | Notes |
 |-------|----------|----------|-------|
-| GPT-4o | OpenAI | General purpose, strong reasoning, multimodal | Good default for most tasks |
-| Claude 3.5 Sonnet | Anthropic | Long documents, nuanced writing, careful analysis | Handles very long context well |
+| GPT-4o | OpenAI | General purpose, reasoning, multimodal | Good default for most tasks |
+| GPT-5-mini | OpenAI | Fast, lightweight tasks | Cost-efficient; good for simple Q&A and summarization |
+| GPT-5.2 | OpenAI | Complex reasoning, general purpose | Strong across writing, analysis, and problem-solving |
+| GPT-5 Codex | OpenAI | Code generation and debugging | Specialized for software development tasks |
+| Claude 4.6 Sonnet | Anthropic | Long documents, nuanced writing, analysis | Handles very long context well; strong prose quality |
+| Claude 4.6 Opus | Anthropic | Complex multi-step reasoning, high-stakes tasks | Most capable Claude model; use when quality matters most |
 | Gemini | Google | Fast responses, multimodal tasks | Good for image analysis |
-| DeepSeek R1 | DeepSeek | Code, math, technical reasoning | Open-weight model; strong at multi-step reasoning |
+| DeepSeek R1 | DeepSeek | Math, technical reasoning, code | Open-weight model; strong at multi-step reasoning |
 
 ## How to choose
 
-**For most tasks:** Start with GPT-4o or whichever model is selected by default. It handles general writing, Q&A, brainstorming, and summarization well.
+Use this as a starting point — the right model depends on your specific task and what's available in your deployment.
 
-**For long documents:** Claude handles larger amounts of text more reliably. If you're uploading a 50-page report or a long policy document, try Claude first.
+**For most tasks:** GPT-4o or GPT-5.2 handles general writing, Q&A, brainstorming, and summarization well. Either is a good default.
 
-**For code and technical work:** DeepSeek R1 is strong at code generation, debugging, and mathematical reasoning. GPT-4o is also solid for code.
+**For quick, simple tasks:** GPT-5-mini is faster and lighter. Use it for short summaries, simple lookups, or anything that doesn't require deep reasoning.
 
-**For image analysis:** If you're uploading images and asking questions about them, use GPT-4o or Gemini — both support vision well.
+**For long documents:** Claude 4.6 Sonnet handles large amounts of text more reliably. If you're uploading a 50-page report or a long policy document, try Claude first.
 
-**For nuanced writing:** Claude tends to produce well-structured, thoughtful prose. Good for drafting reports, proposals, or detailed analysis where tone and structure matter.
+**For high-stakes or complex work:** Claude 4.6 Opus is the most capable option for tasks where quality and accuracy matter most — detailed analysis, nuanced writing, or complex multi-step problems.
+
+**For code:** GPT-5 Codex is purpose-built for software tasks. DeepSeek R1 is also strong for code, math, and technical reasoning. GPT-4o works well for code too.
+
+**For image analysis:** GPT-4o and Gemini both support vision. Upload images and ask questions about them with either model.
+
+**For nuanced writing and prose:** Claude models tend to produce well-structured, thoughtful writing. Good for drafting reports, proposals, or detailed analysis where tone and structure matter.
 
 ## Switching models mid-conversation
 

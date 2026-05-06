@@ -1,28 +1,40 @@
 /* campusGenAI docs theme
-   Matches the marketing site's visual identity — Inter font, rust accent, slate surfaces */
+   Primary: #002A4C (navy), Secondary: #1E7A88 (teal), Tertiary: #D2F2F6 (light blue) */
 
 :root {
-	/* Accent — rust #c2410c matching the marketing site */
-	--sl-color-accent-low: #451a03;
-	--sl-color-accent: #c2410c;
-	--sl-color-accent-high: #fed7aa;
+	/* Accent — light teal for buttons; darker teal overrides text-accent for logo/links */
+	--sl-color-accent-low: #001a2e;
+	--sl-color-accent: #D2F2F6;
+	--sl-color-accent-high: #002A4C;
+	--sl-color-text-accent: #1E7A88;
 
-	/* Surface/text colors matching marketing site slate palette */
-	--sl-color-white: #f8fafc;
+	/* Surface/text — neutral grays so body text is white, not teal */
+	--sl-color-white: #ffffff;
 	--sl-color-gray-1: #e2e8f0;
-	--sl-color-gray-2: #94a3b8;
-	--sl-color-gray-3: #64748b;
-	--sl-color-gray-4: #334155;
-	--sl-color-gray-5: #1e293b;
-	--sl-color-gray-6: #0f172a;
-	--sl-color-black: #0f172a;
+	--sl-color-gray-2: #c8d4df;
+	--sl-color-gray-3: #3d7a8a;
+	--sl-color-gray-4: #1a4a5e;
+	--sl-color-gray-5: #00263d;
+	--sl-color-gray-6: #001a2e;
+	--sl-color-black: #001a2e;
 
 	/* Font */
 	--sl-font: 'Inter', sans-serif;
 }
 
 [data-theme='light'] {
-	--sl-color-accent-low: #fff7ed;
-	--sl-color-accent: #c2410c;
-	--sl-color-accent-high: #7c2d12;
+	--sl-color-accent-low: #e8f8fb;
+	--sl-color-accent: #D2F2F6;
+	--sl-color-accent-high: #002A4C;
+	--sl-color-text-accent: #1E7A88;
+
+	/* Re-declare grays for light mode — dark text on light backgrounds */
+	--sl-color-white: #002A4C;
+	--sl-color-gray-1: #1a3a52;
+	--sl-color-gray-2: #1a3a52;
+	--sl-color-gray-3: #2a5a72;
+	--sl-color-gray-4: #4a8a9a;
+	--sl-color-gray-5: #b0dce6;
+	--sl-color-gray-6: #e8f8fb;
+	--sl-color-black: #ffffff;
 }

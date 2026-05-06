@@ -62,11 +62,58 @@ Common agent types across campusGenAI organizations:
 - **Meeting summarizer** — takes raw notes and produces structured summaries with action items
 - **Training material creator** — generates staff training content based on your programs and workflows
 
+## Artifacts
+
+Artifacts let an agent display generated output in a live-rendered panel alongside the chat, rather than as plain text in the conversation. This is useful when the output is something you'd want to view, interact with, or copy — a diagram, a formatted table, a working HTML component, or a code file.
+
+Supported output types:
+- **HTML/JavaScript** — rendered as a live preview in the panel
+- **React components** — interactive UI prototypes
+- **Mermaid diagrams** — flowcharts, sequence diagrams, entity-relationship diagrams
+- **Structured content** — tables, formatted reports, code files
+
+### Enabling artifacts
+
+Artifacts are enabled per-agent, not globally. When creating or editing an agent, open the **Tools** menu (sliders icon) and enable **Artifacts** from the expanded options. Not all models render artifacts equally well — if output isn't rendering as expected, try a different model.
+
+### Example use cases
+
+- **Process diagram** — describe a workflow and ask the agent to generate a Mermaid flowchart
+- **Data table** — paste in raw data and ask for a formatted summary table
+- **Web prototype** — ask the agent to build a simple HTML/CSS layout for a page or component
+- **Report template** — generate a structured document with headers, tables, and placeholder text ready to fill in
+
 ## Sharing agents
 
-Agents you create are private to you by default. You can share useful agents with specific users or publicly. When you share publicly, everyone on the platform can use that agent. Whether shared users can view or edit the agent's configuration depends on which permission level you choose.
+Agents you create are private by default. You can share them with specific people or make them available to everyone on your deployment.
 
-To share an agent with everyone: open the agent settings and look for the "Share with everyone" option. Then, select everyone's permission level.
+**To share an agent:**
+1. Open the agent and go to its settings
+2. Choose **Share with everyone** to make it available platform-wide, or invite specific users by name or email
+3. Set the permission level:
+   - **Viewer** — can start conversations with the agent but cannot see or edit its configuration
+   - **Advanced Viewer** — can see the agent's instructions and settings but cannot edit
+   - **Editor** — can modify the agent's configuration
+   - **Owner** — full control, including sharing and deletion
+
+You can also generate a **shareable link** to send directly to someone. Links respect the permission level you set.
+
+## Agent Center
+
+The Agent Center is a browsable directory of agents that have been shared on your deployment. You can find it in the sidebar under **Agents**.
+
+Use the Agent Center to:
+- **Discover** agents other users have shared
+- **Filter** by category, agents shared with you, agents created by you, agent templates, and more
+- **Start a conversation** with any shared agent directly
+
+Agents marked with a **registered badge** have been reviewed and endorsed — these are typically maintained by your institution or a trusted team.
+
+## Generating documents
+
+Agents can produce downloadable files — PDFs, Word documents (.docx), and spreadsheets (.csv) — when configured with the appropriate MCP. This is useful for agents that generate recurring reports, formatted summaries, or structured data exports that users need to save or share outside the platform.
+
+To enable document generation for an agent, add the relevant MCP when configuring the agent's tools. See [MCP & External Tools](/campusgenai-docs/skills/mcp-guides/) for setup details.
 
 ---
 

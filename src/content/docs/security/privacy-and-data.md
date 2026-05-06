@@ -5,12 +5,12 @@ description: Data privacy, security practices, and what campusGenAI does and doe
 
 ## Your data is private by default
 
-Conversations, uploaded files, and agents you create are private to your account and organization. Other users — including users at other organizations on the community deployment — cannot see your conversations or files.
+Conversations, uploaded files, and agents you create are private to your account and organization. Other users cannot see your conversations or files.
 
 The only exceptions are things you explicitly choose to share:
 
-- **Agents you publish to the community library** — when you publish an agent, its instructions are shared with other organizations on the platform. Your conversations and the files attached to that agent are not shared.
-- **Agents shared within your organization** — if your administrator makes an agent available to your whole team, members of your organization can use it.
+- **Agents you share with everyone publicly** — when you publish an agent, its instructions are shared with everyone on the platform. Your conversations and the files attached to that agent are not shared.
+- **Agents shared with other individual users** — if you share an agent with another user, that user can use the agent. Whether they can see it's configuration details depends on which permission level you choose when sharing.
 
 ## AI providers don't train on your data
 
