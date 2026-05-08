@@ -48,13 +48,13 @@ You can switch models at any point using the model selector. Note that switching
 
 ## Model access
 
-Model availability is controlled by your administrator. If a model isn't appearing in your selector that you'd like to use, contact your IT department or campusgenai@umass.edu.
+Model availability is controlled by your administrator. If a model isn't appearing in your selector that you'd like to use, contact your IT department.
 
 ---
 
 ## Need help?
 
-- **Email:** campusgenai@umass.edu
+- **Get help:** [Contact us](/campusgenai-docs/get-help/)
 - **About campusGenAI:** [Main site](https://umasscds.github.io/campusgenai-site/)
 
 Your interface may look slightly different depending on your institution's deployment.

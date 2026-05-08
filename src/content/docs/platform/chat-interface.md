@@ -58,7 +58,7 @@ Use the attachment button (paperclip icon) in the input area to upload documents
 
 ## Need help?
 
-- **Email:** campusgenai@umass.edu
+- **Get help:** [Contact us](/campusgenai-docs/get-help/)
 - **About campusGenAI:** [Main site](https://umasscds.github.io/campusgenai-site/)
 
 Your interface may look slightly different depending on your institution's deployment.

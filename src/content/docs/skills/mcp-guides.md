@@ -4,7 +4,7 @@ description: Model Context Protocol — connecting AI agents to external tools a
 ---
 
 :::caution
-MCP tool availability varies significantly by deployment and requires administrator setup. This page describes how MCP works in general — contact your administrator or campusgenai@umass.edu to find out what tools are available in your specific deployment.
+MCP tool availability varies significantly by deployment and requires administrator setup. This page describes how MCP works in general — contact your administrator to find out what tools are available in your specific deployment.
 :::
 
 ## What is MCP?
@@ -61,7 +61,7 @@ Only enable tools the agent actually needs. Each enabled tool adds potential acc
 
 ## Need help?
 
-- **Email:** campusgenai@umass.edu
+- **Get help:** [Contact us](/campusgenai-docs/get-help/)
 - **About campusGenAI:** [Main site](https://umasscds.github.io/campusgenai-site/)
 
 Your interface may look slightly different depending on your institution's deployment.

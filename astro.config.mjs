@@ -60,6 +60,7 @@ export default defineConfig({
 						{ label: 'Release Notes', slug: 'reference/release-notes' },
 					],
 				},
+				{ label: 'Get Help', slug: 'get-help', icon: 'comment' },
 			],
 		}),
 	],

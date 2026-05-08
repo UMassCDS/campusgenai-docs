@@ -9,7 +9,7 @@ This page covers the essentials for your first session.
 
 campusGenAI uses your institution's Single Sign-On (SSO). Navigate to your institution's campusGenAI URL and sign in with your normal institutional credentials — the same username and password you use for other campus systems.
 
-If you're on the campusLaunch deployment as part of the AI Enablement Program, log in at [hub.campusgenai.org](https://community.campusgenai.org). If you're at an institution with its own deployment, your IT department or AI lead will have shared the URL.
+If you're on the campusLaunch deployment as part of the AI Enablement Program, log in at [hub.campusgenai.org](https://community.campusgenai.org). If you're at an institution with its own deployment, your IT department or AI lead will have shared the URL. If you're not sure who that is, [contact us](/campusgenai-docs/get-help/).
 
 ## The interface
 
@@ -45,7 +45,7 @@ Your past conversations are saved in the sidebar and you can return to any of th
 
 ## Need help?
 
-- **Email:** campusgenai@umass.edu
+- **Get help:** [Contact us](/campusgenai-docs/get-help/)
 - **About campusGenAI:** [Main site](https://umasscds.github.io/campusgenai-site/)
 
 Your interface may look slightly different depending on your institution's deployment.

@@ -22,5 +22,5 @@ description: Platform updates and changes to campusGenAI.
 
 ## Need help?
 
-- **Email:** campusgenai@umass.edu
+- **Get help:** [Contact us](/campusgenai-docs/get-help/)
 - **About campusGenAI:** [Main site](https://umasscds.github.io/campusgenai-site/)
