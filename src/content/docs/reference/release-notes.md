@@ -23,5 +23,4 @@ description: Platform updates and changes to campusGenAI.
 ## Need help?
 
 - **Email:** campusgenai@umass.edu
-- **Learning path:** [8-step getting started guide](https://umasscds.github.io/campusgenai-site/learn)
 - **About campusGenAI:** [Main site](https://umasscds.github.io/campusgenai-site/)

@@ -3,7 +3,7 @@ title: Quick Guide
 description: Get started with campusGenAI — log in, send your first message, and switch models.
 ---
 
-This page covers the essentials for your first session. For a full guided onboarding, see the [8-step learning path](https://umasscds.github.io/campusgenai-site/learn) on the main site.
+This page covers the essentials for your first session.
 
 ## Logging in
 
@@ -46,7 +46,6 @@ Your past conversations are saved in the sidebar and you can return to any of th
 ## Need help?
 
 - **Email:** campusgenai@umass.edu
-- **Learning path:** [8-step getting started guide](https://umasscds.github.io/campusgenai-site/learn)
 - **About campusGenAI:** [Main site](https://umasscds.github.io/campusgenai-site/)
 
 Your interface may look slightly different depending on your institution's deployment.

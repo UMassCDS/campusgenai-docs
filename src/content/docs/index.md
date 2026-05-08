@@ -18,7 +18,6 @@ hero:
 
 This site is the reference documentation for the campusGenAI platform. If you're looking for:
 
-- **Getting started with campusGenAI for the first time** → [The learning path on the main site](https://umasscds.github.io/campusgenai-site/learn) has an 8-step guided onboarding
 - **What campusGenAI is and how to get access** → [Visit the main site](https://umasscds.github.io/campusgenai-site/)
 - **Platform how-tos and reference** → You're in the right place
 

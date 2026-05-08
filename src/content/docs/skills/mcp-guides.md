@@ -62,7 +62,6 @@ Only enable tools the agent actually needs. Each enabled tool adds potential acc
 ## Need help?
 
 - **Email:** campusgenai@umass.edu
-- **Learning path:** [8-step getting started guide](https://umasscds.github.io/campusgenai-site/learn)
 - **About campusGenAI:** [Main site](https://umasscds.github.io/campusgenai-site/)
 
 Your interface may look slightly different depending on your institution's deployment.
