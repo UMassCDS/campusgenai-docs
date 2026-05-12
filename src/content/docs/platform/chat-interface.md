@@ -3,14 +3,14 @@ title: The Chat Interface
 description: How to use the campusGenAI chat interface — conversations, model selection, and navigation.
 ---
 
-## Overview
+## Introduction
 
 When you log in to campusGenAI, the main view is the chat interface. It has three primary areas:
 
-- **Model selector**: At the top of the chat, lets you choose which AI model handles your conversation
-- **Chat area**: The main content area where your conversation appears
-- **Input box**: At the bottom, where you type messages and attach files
-- **Sidebar**: On the left, contains your conversation history, the Agents section, and settings access
+- **Model selector**: At the top of the window, where you can choose an AI model for your conversation.
+- **Chat area**: The main content area, where your conversation appears.
+- **Input box**: At the bottom of the window, where you can type messages and attach files.
+- **Sidebar**: On the left, where you can find the Agent Builder, Settings, MCPs, and more. 
 
 ## Starting a conversation
 
