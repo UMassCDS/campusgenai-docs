@@ -23,4 +23,4 @@ This site is the reference documentation for the campusGenAI platform. If you're
 
 ---
 
-*This is the reference documentation site. For the main campusGenAI site, visit [umasscds.github.io/campusgenai-site](https://umasscds.github.io/campusgenai-site/).*
+*This is the reference documentation site. Visit the main campusGenAI site [here](https://campusgenai.org).*
