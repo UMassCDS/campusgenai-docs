@@ -43,7 +43,7 @@ Contact your administrator for the specific list of tools enabled in your deploy
 
 ## Configuring an agent to use MCP tools
 
-1. Create or edit an agent (see [Using Agents](/campusgenai-docs/platform/using-agents/))
+1. Create or edit an agent (see [Using Agents](/platform/using-agents/))
 2. In the agent configuration, look for the **Tools** or **MCP** section
 3. Enable the tools you want the agent to use
 4. Save the agent
@@ -61,7 +61,7 @@ Only enable tools the agent actually needs. Each enabled tool adds potential acc
 
 ## Need help?
 
-- **Get help:** [Contact us](/campusgenai-docs/get-help/)
+- **Get help:** [Contact us](/get-help/)
 - **About campusGenAI:** [Main site](https://umasscds.github.io/campusgenai-site/)
 
 Your interface may look slightly different depending on your institution's deployment.

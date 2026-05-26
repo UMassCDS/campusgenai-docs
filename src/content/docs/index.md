@@ -6,9 +6,9 @@ hero:
   tagline: Platform guides, reference documentation, and resources for campusGenAI users and administrators.
   actions:
     - text: Platform Guides
-      link: /campusgenai-docs/platform/chat-interface/
+      link: /platform/chat-interface/
     - text: Model Comparison
-      link: /campusgenai-docs/models/model-comparison/
+      link: /models/model-comparison/
       variant: secondary
 ---
 

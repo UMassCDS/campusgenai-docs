@@ -3,8 +3,8 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
-	site: 'https://umasscds.github.io',
-	base: '/campusgenai-docs',
+	site: 'https://docs.campusgenai.org',
+	base: '/',
 	integrations: [
 		starlight({
 			title: 'campusGenAI Docs',

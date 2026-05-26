@@ -21,7 +21,7 @@ An agent configuration includes:
 3. Fill in the configuration:
    - **Name** — something descriptive (e.g., "Grant Writing Assistant", "Board Report Generator")
    - **Instructions** — detailed behavioral instructions (see below)
-   - **Model** — choose based on the task; see [Model Comparison](/campusgenai-docs/models/model-comparison/)
+   - **Model** — choose based on the task; see [Model Comparison](/models/model-comparison/)
    - **Files** — upload any reference documents
    - **Tools** — add Google search, image generation, Wolfram, etc.
    - **MCPs** — add document generation capabilities and more
@@ -113,13 +113,13 @@ Agents marked with a **registered badge** have been reviewed and endorsed — th
 
 Agents can produce downloadable files — PDFs, Word documents (.docx), and spreadsheets (.csv) — when configured with the appropriate MCP. This is useful for agents that generate recurring reports, formatted summaries, or structured data exports that users need to save or share outside the platform.
 
-To enable document generation for an agent, add the relevant MCP when configuring the agent's tools. See [MCP & External Tools](/campusgenai-docs/skills/mcp-guides/) for setup details.
+To enable document generation for an agent, add the relevant MCP when configuring the agent's tools. See [MCP & External Tools](/skills/mcp-guides/) for setup details.
 
 ---
 
 ## Need help?
 
-- **Get help:** [Contact us](/campusgenai-docs/get-help/)
+- **Get help:** [Contact us](/get-help/)
 - **About campusGenAI:** [Main site](https://umasscds.github.io/campusgenai-site/)
 
 Your interface may look slightly different depending on your institution's deployment.

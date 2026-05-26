@@ -22,7 +22,7 @@ The model selector at the top of the chat controls which AI model processes your
 
 Switching models takes effect on your next message. The new model maintains context from messages sent to the previous model as long as you are still in the same conversation.
 
-See [Model Comparison](/campusgenai-docs/models/model-comparison/) for guidance on choosing between models.
+See [Model Comparison](/models/model-comparison/) for guidance on choosing between models.
 
 ## Managing conversations
 
@@ -45,7 +45,7 @@ To start a temporary chat, look for the **Temporary chat** option in the new con
 
 ## Attaching files
 
-Use the attachment button (paperclip icon) in the input area to upload documents. See [Working with Files](/campusgenai-docs/platform/working-with-files/) for supported formats and how to work with uploaded content.
+Use the attachment button (paperclip icon) in the input area to upload documents. See [Working with Files](/platform/working-with-files/) for supported formats and how to work with uploaded content.
 
 ## Keyboard shortcuts
 
@@ -56,7 +56,7 @@ Use the attachment button (paperclip icon) in the input area to upload documents
 
 ## Need help?
 
-- **Get help:** [Contact us](/campusgenai-docs/get-help/)
+- **Get help:** [Contact us](/get-help/)
 - **About campusGenAI:** [Main site](https://umasscds.github.io/campusgenai-site/)
 
 Your interface may look slightly different depending on your institution's deployment.

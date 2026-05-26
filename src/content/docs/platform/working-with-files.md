@@ -89,13 +89,13 @@ File upload limits vary by institution. Contact your administrator if you need t
 
 ## Privacy
 
-Uploaded files are processed according to your institution's data governance policies. See [Privacy & Data](/campusgenai-docs/security/privacy-and-data/) for details.
+Uploaded files are processed according to your institution's data governance policies. See [Privacy & Data](/security/privacy-and-data/) for details.
 
 ---
 
 ## Need help?
 
-- **Get help:** [Contact us](/campusgenai-docs/get-help/)
+- **Get help:** [Contact us](/get-help/)
 - **About campusGenAI:** [Main site](https://umasscds.github.io/campusgenai-site/)
 
 Your interface may look slightly different depending on your institution's deployment.
