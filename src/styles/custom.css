@@ -309,3 +309,46 @@ a.sl-link-button.minimal:hover {
 .pagination-links a[rel='next'] svg {
 	color: #ffffff;
 }
+
+/* ---------- Search modal (Pagefind) ---------- */
+/* Starlight defaults pagefind text to --sl-color-gray-2 which reads as muted
+   gray on white. Re-map to the primary text color and brand accent. */
+#starlight__search {
+	--pagefind-ui-text: var(--sl-color-white);
+	--pagefind-ui-primary: var(--sl-color-text-accent);
+}
+
+/* Light mode: pure-white modal surface instead of gray-6 (#e2e8f0) */
+:root[data-theme='light'] site-search dialog {
+	background-color: #ffffff;
+	border-color: var(--sl-color-hairline);
+}
+
+/* Pagefind result titles, excerpts, and metadata — explicit color overrides
+   in case pagefind sets its own */
+#starlight__search .pagefind-ui__result-title,
+#starlight__search .pagefind-ui__result-link {
+	color: var(--sl-color-white);
+	font-family: var(--sl-font-heading);
+	font-weight: 600;
+	letter-spacing: -0.02em;
+}
+
+#starlight__search .pagefind-ui__result-link:hover {
+	color: var(--sl-color-text-accent);
+}
+
+#starlight__search .pagefind-ui__result-excerpt {
+	color: var(--sl-color-gray-3);
+}
+
+#starlight__search .pagefind-ui__message,
+#starlight__search .pagefind-ui__result-tag {
+	color: var(--sl-color-white);
+	font-weight: 500;
+}
+
+#starlight__search mark {
+	background: rgba(30, 122, 136, 0.18);
+	color: inherit;
+}
