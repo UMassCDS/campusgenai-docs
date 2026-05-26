@@ -3,8 +3,6 @@ title: The Chat Interface
 description: How to use the campusGenAI chat interface — conversations, model selection, and navigation.
 ---
 
-## Overview
-
 When you log in to campusGenAI, the main view is the chat interface. It has three primary areas:
 
 - **Model selector**: At the top of the chat, lets you choose which AI model handles your conversation

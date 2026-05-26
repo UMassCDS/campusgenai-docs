@@ -7,11 +7,9 @@ hero:
   actions:
     - text: Platform Guides
       link: /campusgenai-docs/platform/chat-interface/
-      icon: right-arrow
     - text: Model Comparison
       link: /campusgenai-docs/models/model-comparison/
       variant: secondary
-      icon: right-arrow
 ---
 
 ## For existing campusGenAI users
