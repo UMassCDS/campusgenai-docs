@@ -10,7 +10,7 @@ hero:
       icon: right-arrow
     - text: Model Comparison
       link: /campusgenai-docs/models/model-comparison/
-      variant: minimal
+      variant: secondary
       icon: right-arrow
 ---
 

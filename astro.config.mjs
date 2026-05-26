@@ -8,6 +8,21 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'campusGenAI Docs',
+			logo: {
+				src: './src/assets/logo-primary.png',
+				replacesTitle: true,
+			},
+			favicon: '/favicon.png',
+			head: [
+				{
+					tag: 'script',
+					content: `
+						if (!localStorage.getItem('starlight-theme')) {
+							document.documentElement.dataset.theme = 'light';
+						}
+					`,
+				},
+			],
 			social: [
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/campusgenai' },
 			],
@@ -16,6 +31,9 @@ export default defineConfig({
 				'@fontsource/inter/500.css',
 				'@fontsource/inter/600.css',
 				'@fontsource/inter/700.css',
+				'@fontsource/dm-sans/600.css',
+				'@fontsource/dm-sans/700.css',
+				'@fontsource/dm-sans/900.css',
 				'./src/styles/custom.css',
 			],
 			sidebar: [
