@@ -3,11 +3,11 @@ title: Credits & Tokens
 description: How credits and tokens work on campusGenAI, how to check your balance, and how refills happen.
 ---
 
-Every conversation on campusGenAI consumes **tokens**, which draw down your **credit** balance. You don't need to manage this actively — but understanding the mechanics helps you pick the right model and recognize why some conversations feel "heavier" than others.
+Every conversation on campusGenAI consumes **tokens**, which draw down your **credit** balance. You don't need to manage this actively, but understanding the mechanics helps you pick the right model and recognize why some conversations feel "heavier" than others.
 
 ## Credits
 
-Credits are your usage budget on the platform. Each user has a credit balance and a **refill interval** — most commonly one day — both of which are configured by your institution's administrator.
+Credits are your usage budget on the platform. Each user has a credit balance and a **refill interval** (typically one day), both of which are configured by your institution's administrator.
 
 Your balance carries over between sessions. Refills happen automatically, but only when two conditions are true:
 
@@ -15,6 +15,10 @@ Your balance carries over between sessions. Refills happen automatically, but on
 2. The refill interval has elapsed since your last refill.
 
 This means you won't get a fresh top-up while you still have credits left. The system tops you up only when you actually need it.
+
+:::note
+The refill mechanism described here is under active development and may change. Check this page for the most current behavior.
+:::
 
 ## Tokens
 
@@ -48,6 +52,15 @@ If the time on the "Next Refill" line has passed but your balance hasn't updated
 ## Storage usage
 
 Some deployments also track **file storage** alongside credits. Storage consumption is displayed in the same Settings area, under **Usage** or **Storage** depending on your deployment.
+
+<video
+  src="/check-storage.mov"
+  autoplay
+  loop
+  muted
+  playsinline
+  style="max-width: 100%; border-radius: 0.5rem; margin-top: 1rem;"
+></video>
 
 ## Choosing models for cost
 
