@@ -50,6 +50,7 @@ export default defineConfig({
 						{ label: 'Working with Files', slug: 'platform/working-with-files' },
 						{ label: 'Using Agents', slug: 'platform/using-agents' },
 						{ label: 'Settings & Preferences', slug: 'platform/settings' },
+						{ label: 'Credits & Tokens', slug: 'platform/credits-and-tokens' },
 						{ label: 'Admin Dashboard', slug: 'platform/admin-dashboard' },
 					],
 				},

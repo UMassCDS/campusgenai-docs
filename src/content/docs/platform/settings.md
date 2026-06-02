@@ -20,33 +20,9 @@ If your institution uses SSO, some settings are managed by your administrator an
 | Language | Interface language (if multiple languages are enabled) |
 | Default model | Which model is selected when you start a new conversation |
 
-## Usage tracking
+## Usage and balance
 
-campusGenAI tracks your AI model usage. To view it:
-
-1. Go to **Settings → Usage**
-2. You'll see a breakdown by model and time period
-3. Usage is measured in **tokens** — the units AI models use to process text
-
-### Understanding tokens
-
-- 1 token ≈ 4 characters of English text
-- A typical message exchange uses 500–2,000 tokens
-- Longer documents, complex instructions, and detailed responses use more tokens
-
-Usage information helps you understand your activity and, in some deployments, tracks against an allocated balance.
-
-## Usage balance
-
-Some institutions allocate a token or usage balance per user. If your deployment uses this model:
-
-- Your remaining balance appears in **Settings → Usage**
-- Balance resets on a schedule set by your administrator
-- If you approach or exceed your balance, contact your administrator
-
-If your balance drops to zero, the platform will show a notification and you won't be able to send messages until your balance is refreshed — either on its scheduled reset or manually by your administrator.
-
-Some deployments also track **file storage usage** alongside token balance. You can view your storage consumption in the same **Settings → Usage** area.
+Your credit balance, token usage, and (in some deployments) file-storage usage are visible under **Settings → Balance** or **Settings → Usage**. For how credits and tokens work, refill mechanics, and choosing models for cost, see [Credits & Tokens](/platform/credits-and-tokens/).
 
 ## Model access
 
