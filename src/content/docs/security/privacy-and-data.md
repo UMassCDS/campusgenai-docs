@@ -31,11 +31,11 @@ Administrators at your institution can see aggregate usage data and per-user act
 
 ## Authentication
 
-campusGenAI uses your institution's Single Sign-On (SSO) for authentication. You log in with your normal institutional credentials — campusGenAI does not store a separate password. Sessions expire according to your institution's security policy.
+campusGenAI typically uses your institution's Single Sign-On (SSO) for authentication. You log in with your normal institutional credentials — campusGenAI does not store a separate password. Sessions expire according to your institution's security policy.
 
 ## Data classification
 
-The campusGenAI platform is designed to meet institutional security requirements. For the UMass deployment, the platform is approved for UMass Level 3 data classification.
+The campusGenAI platform is designed to meet institutional security requirements. For the UMass deployment (and a few others; check with your admin), the platform is approved for UMass Level 3 data classification.
 
 **What this means in practice:**
 
@@ -55,6 +55,6 @@ campusGenAI is deployed by and for individual institutions and organizations. Yo
 ## Need help?
 
 - **Get help:** [Contact us](/get-help/)
-- **About campusGenAI:** [Main site](https://umasscds.github.io/campusgenai-site/)
+- **About campusGenAI:** [Main site](https://campusgenai.org)
 
 Your interface may look slightly different depending on your institution's deployment.
