@@ -32,6 +32,22 @@ See [Model Comparison](/models/model-comparison/) for guidance on choosing betwe
 
 **Conversation context:** Each conversation has its own context window. If a conversation becomes very long, older messages may fall outside the model's context. For long-running projects, it's often better to start a new conversation with a fresh summary of where you are.
 
+## Bookmarks
+
+Bookmarks group related conversations by topic so you can find them later without scrolling through your full history.
+
+**Creating a bookmark:**
+
+1. From the top menu of a conversation, click the **bookmark icon**.
+2. In the dropdown, click **New Bookmark**.
+3. Fill in the bookmark details and save. Check **Add to current conversation** if you want to tag the current conversation right away.
+
+**Applying a bookmark to a conversation:** Open the bookmark icon menu in any conversation and select an existing bookmark to attach it.
+
+**Filtering by bookmark:** Use the **Bookmarks** selector in the left sidebar to show only conversations tagged with a chosen bookmark.
+
+**Managing bookmarks:** Rename or delete bookmarks from the **Bookmarks** section in the left-side panel.
+
 ## Temporary chat
 
 Temporary chat mode lets you have a conversation that isn't saved to your history. It won't appear in the sidebar when the session ends and can't be returned to later.
