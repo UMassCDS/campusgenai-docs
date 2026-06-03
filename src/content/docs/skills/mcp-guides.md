@@ -22,7 +22,7 @@ These tools are part of the campusGenAI platform. Enable them on an agent when y
 |------|--------------|
 | **Google search** | Searches the web for current information not in the model's training data. Useful for news, recent events, and up-to-date facts. |
 | **GPT-Image** | Generates images from text descriptions. Useful when an agent needs to produce diagrams, illustrations, or visual examples. |
-| **Wolfram** | Sends math, science, and computational queries to Wolfram Alpha and returns structured results. Useful for formulas, unit conversions, symbolic math, and quantitative reasoning. |
+| **Wolfram** | Sends math, science, and computational queries to Wolfram Alpha and returns structured results. Useful for formulas, unit conversions, symbolic math, and quantitative reasoning. Requires a Wolfram Alpha App ID, which you provide when adding the tool to an agent. |
 
 ## What is MCP?
 
