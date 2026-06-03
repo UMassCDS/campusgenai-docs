@@ -51,16 +51,9 @@ If the time on the "Next Refill" line has passed but your balance hasn't updated
 
 ## Storage usage
 
-Some deployments also track **file storage** alongside credits. Storage consumption is displayed in the same Settings area, under **Usage** or **Storage** depending on your deployment.
+Some deployments also track **file storage** alongside credits. View your storage limit status by going to **Attach Files** in the left sidebar and then selecting **Manage Files**.
 
-<video
-  src="/check-storage.mov"
-  autoplay
-  loop
-  muted
-  playsinline
-  style="max-width: 100%; border-radius: 0.5rem; margin-top: 1rem;"
-></video>
+![Storage status panel showing the Manage Files view](/storage-status.png)
 
 ## Choosing models for cost
 
