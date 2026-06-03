@@ -309,6 +309,21 @@ a.sl-link-button.minimal:hover {
 	border-color: var(--sl-color-hairline);
 }
 
+/* ---------- Asides / note callouts ---------- */
+/* Note aside uses brand teal accent on a pale cyan surface */
+.starlight-aside--note {
+	--sl-color-asides-text-accent: #1e7a88;
+	--sl-color-asides-border: #1e7a88;
+}
+
+:root[data-theme='light'] .starlight-aside--note {
+	background-color: #d2f2f6;
+}
+
+:root[data-theme='dark'] .starlight-aside--note {
+	background-color: rgba(30, 122, 136, 0.18);
+}
+
 /* Pagefind result titles, excerpts, and metadata — explicit color overrides
    in case pagefind sets its own */
 #starlight__search .pagefind-ui__result-title,
