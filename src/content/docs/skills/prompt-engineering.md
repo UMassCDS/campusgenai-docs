@@ -142,6 +142,6 @@ From the attached meeting transcript, extract:
 ## Need help?
 
 - **Get help:** [Contact us](/get-help/)
-- **About campusGenAI:** [Main site](https://umasscds.github.io/campusgenai-site/)
+- **About campusGenAI:** [Main site](https://campusgenai.org)
 
 Your interface may look slightly different depending on your institution's deployment.

@@ -16,7 +16,7 @@ hero:
 
 This site is the reference documentation for the campusGenAI platform. If you're looking for:
 
-- **What campusGenAI is and how to get access** → [Visit the main site](https://umasscds.github.io/campusgenai-site/)
+- **What campusGenAI is and how to get access** → [Visit the main site](https://campusgenai.org)
 - **Platform how-tos and reference** → You're in the right place
 
 ---
