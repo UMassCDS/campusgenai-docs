@@ -5,7 +5,7 @@ description: Data privacy, security practices, and what campusGenAI does and doe
 
 ## Your data is private by default
 
-Conversations, uploaded files, and agents you create are private to your account and organization. Other users cannot see your conversations or files.
+Conversations, uploaded files, and agents you create are private to your account and organization. Other users cannot see your conversations or files. Each institution's campusGenAI deployment runs in its own dedicated environment, so users at other institutions can't access your data either.
 
 The only exceptions are things you explicitly choose to share:
 
@@ -14,9 +14,15 @@ The only exceptions are things you explicitly choose to share:
 
 ## AI providers don't train on your data
 
-campusGenAI's enterprise agreements with AI model providers (OpenAI, Anthropic, Google, DeepSeek, and others) include data protection terms that prevent providers from using your conversations or files to train their models.
+All AI models in campusGenAI are accessed through enterprise cloud services — **AWS Bedrock** and **Microsoft Azure AI Foundry** — whose data-protection terms prevent your conversations and files from being used to train foundation models or shared with third-party model providers.
 
-Your data goes to the model provider to generate a response, and that's it. It is not stored by providers for training purposes.
+Your data goes to the model to generate a response, and that's it. It is not stored for training purposes. For the contractual specifics, see [Security Architecture](/security/architecture/).
+
+## Deleting conversations
+
+You can delete any conversation from your history. Deleted conversations are removed from the application immediately and are no longer accessible to you or to administrators.
+
+Deleted data may persist briefly in routine infrastructure backups before being purged on the standard backup cycle. See [Security Architecture](/security/architecture/) for retention specifics.
 
 ## What data is collected
 
@@ -31,7 +37,7 @@ Administrators at your institution can see aggregate usage data and per-user act
 
 ## Authentication
 
-campusGenAI typically uses your institution's Single Sign-On (SSO) for authentication. You log in with your normal institutional credentials — campusGenAI does not store a separate password. Sessions expire according to your institution's security policy.
+campusGenAI typically uses your institution's Single Sign-On (SSO) for authentication. You log in with your normal institutional credentials — campusGenAI does not store a separate password.
 
 ## Data classification
 
