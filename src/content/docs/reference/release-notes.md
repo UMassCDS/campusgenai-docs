@@ -7,11 +7,9 @@ description: Platform updates and changes to campusGenAI.
 
 ### Spring 2026
 
-- **Documentation site launched** — Reference documentation now available at this site
-- **DeepSeek R1 added** — DeepSeek's reasoning model now available across all deployments
-- **Agent builder improvements** — Longer system prompts and better handling of uploaded reference documents
-- **Document analysis updates** — Improved handling of large PDFs and spreadsheets
-- **Site restructure** — Dedicated community and enterprise pages on the main site
+- **New documentation site launched** — Reference documentation now available at this site
+- **New main site launched** — New main website now available at [campusgenai.org](https://campusgenai.org)
+
 
 ---
 
