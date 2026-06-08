@@ -12,18 +12,20 @@ description: Platform updates and changes to campusGenAI.
 - **Pinning and reordering:** Users can pin agents and models, with drag-and-drop reordering.
 - **Agent analytics:** Shared agents now display usage analytics in the Agent Center for owners.
 - **Various bug fixes**
+- **New documentation site launched:** Reference documentation now available at this site
+- **New main site launched:** New main website now available at [campusgenai.org](https://campusgenai.org)
+
+#### Admin
+
+- **New admin portal:** A refreshed admin portal with usability improvements and a more user-friendly interface with expanded capabilities.
+- **Role-based access:** Admins can create roles and define each role's permissions and grants, making it easy to control different levels of admin access (analytics admin, billing admin, user management admin, etc.).
+- **Auto-moderation page:** A built-in moderation system for security purposes. Use the auto-moderation page to see when users are banned and release them if they're an approved user.
 
 *The timeline for these updates depends on your institution's deployment. You may not see these changes yet, but they're on the way.*
 
 #### Coming soon
 
 - **API key access:** Faculty and staff can request API keys for themselves or their teams (usage-based; speedtype required).
-
-### Spring 2026
-
-- **New documentation site launched:** Reference documentation now available at this site
-- **New main site launched:** New main website now available at [campusgenai.org](https://campusgenai.org)
-
 
 ---
 
