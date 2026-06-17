@@ -55,6 +55,16 @@ export default defineConfig({
 					],
 				},
 				{
+					label: 'KeyMaker API',
+					items: [
+						{ label: 'Overview', slug: 'keymaker/overview' },
+						{ label: 'Getting Started', slug: 'keymaker/getting-started' },
+						{ label: 'Claude Code Setup', slug: 'keymaker/claude-code' },
+						{ label: 'OpenAI Codex Setup', slug: 'keymaker/codex' },
+						{ label: 'Usage & Best Practices', slug: 'keymaker/usage' },
+					],
+				},
+				{
 					label: 'Models',
 					items: [
 						{ label: 'Model Comparison', slug: 'models/model-comparison' },
