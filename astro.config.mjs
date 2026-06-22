@@ -12,6 +12,10 @@ export default defineConfig({
 				src: './src/assets/logo-primary.png',
 				replacesTitle: true,
 			},
+			components: {
+				// Point the upper-left logo at the marketing site instead of the docs home.
+				SiteTitle: './src/components/SiteTitle.astro',
+			},
 			favicon: '/favicon.png',
 			head: [
 				{

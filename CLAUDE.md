@@ -19,12 +19,14 @@ Reference documentation for campusGenAI platform users. Built with Astro Starlig
 - Themed to match marketing site visual identity (Inter font, rust `#c2410c` accent, slate surfaces)
 - Theme overrides in `src/styles/custom.css`
 - Sidebar configured in `astro.config.mjs`
+- Homepage (`src/content/docs/index.mdx`) is a card hub linking into every section. It uses the default `doc` template (NOT `splash`) so the left sidebar stays visible. Cards use the custom `src/components/IconLinkCard.astro` (Starlight's `LinkCard` plus a leading icon from the built-in icon set).
+- The upper-left logo links out to the marketing site (`campusgenai.org`), not the docs home, via a `SiteTitle` component override (`src/components/SiteTitle.astro`) wired up in `astro.config.mjs`. Getting back to the docs is handled by the marketing site's nav.
 
 ## Content structure
 
 ```
 src/content/docs/
-├── index.md                         ← Docs homepage (splash template)
+├── index.mdx                        ← Docs homepage (card hub linking into each section)
 ├── getting-started/quick-guide.md
 ├── platform/
 │   ├── chat-interface.md
