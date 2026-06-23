@@ -49,6 +49,16 @@ description: Configure Claude Code, Anthropic's CLI coding agent, to use campusG
    }
    ```
 
+   :::tip[Already set up Codex?]
+   If you configured [Codex](/keymaker/codex/) first, your key is already saved as the `KEYMAKER_API_KEY` environment variable. You can print it to copy into `ANTHROPIC_AUTH_TOKEN`:
+
+   ```bash
+   echo $KEYMAKER_API_KEY
+   ```
+
+   It's the same KeyMaker key — only the variable name differs (Claude Code uses `ANTHROPIC_AUTH_TOKEN`).
+   :::
+
 7. Save the file.
 
 8. Start Claude Code by typing `claude` in the terminal:

@@ -65,6 +65,7 @@ export default defineConfig({
 						{ label: 'Getting Started', slug: 'keymaker/getting-started' },
 						{ label: 'Claude Code Setup', slug: 'keymaker/claude-code' },
 						{ label: 'OpenAI Codex Setup', slug: 'keymaker/codex' },
+						{ label: 'Python API Access', slug: 'keymaker/python' },
 						{ label: 'Usage & Best Practices', slug: 'keymaker/usage' },
 					],
 				},
