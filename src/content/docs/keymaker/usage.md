@@ -22,6 +22,18 @@ Because usage is billed to your speedtype, it's worth managing it actively:
 - Remove team members who no longer need access.
 - Keep in mind that programmatic workflows (batch jobs, pipelines) can consume far more than interactive chat use — a single script can make thousands of calls.
 
+## Requesting more funds
+
+If you're running low on your allocation, the process is currently manual and depends on whether you're a team member or a sponsor.
+
+**Team members:** Request additional funds directly from your sponsor. Your sponsor controls how funding is allocated across the team in the KeyMaker portal and can increase your allocation from there.
+
+**Sponsors:** Request a budget top-up for your team within the KeyMaker portal. The request is sent to the admin portal for approval.
+
+:::note
+This process is manual today. Automated alerts and email notifications are planned for a future release.
+:::
+
 ## Security best practices
 
 Your API key is billed to your sponsor's funding and should be protected like a password.
@@ -44,7 +56,7 @@ Your API key is billed to your sponsor's funding and should be protected like a 
 
 - Integrating AI into a custom application or institutional tool
 - Automating work — batch processing, data analysis, pipelines
-- Using a coding agent such as [Claude Code](/keymaker/claude-code/)
+- Using a coding agent such as [Claude Code](/keymaker/claude-code/) or [Codex](/keymaker/codex)
 - Running repeatable, programmatic workflows that go beyond a chat session
 
 ---

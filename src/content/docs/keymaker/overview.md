@@ -5,6 +5,13 @@ description: Direct API access to campusGenAI's AI models for programmatic use, 
 
 KeyMaker is direct API access to the AI models available through campusGenAI. It lets you use those models outside the chat interface — in your own code, custom applications, and research workflows — while running on the same secure, institutionally governed infrastructure as the chat platform.
 
+:::note[Availability]
+KeyMaker is in beta and may not be broadly available at every institution yet.
+
+- **Interested in campusGenAI?** Reach out through the [contact form on our main site](https://www.campusgenai.org/contact).
+- **Already a user and want KeyMaker access?** Contact your institution's platform admin.
+:::
+
 ## What KeyMaker is
 
 The campusGenAI chat interface is great for conversational, day-to-day use. KeyMaker opens the door to everything beyond that:
@@ -12,7 +19,7 @@ The campusGenAI chat interface is great for conversational, day-to-day use. KeyM
 - **Programmatic integrations** — call AI models directly from your own scripts and services
 - **Custom applications** — build institutional tools and apps on top of campusGenAI's models
 - **Research workflows** — batch processing, data analysis, and custom AI pipelines
-- **Developer tooling** — use coding agents like [Claude Code](/keymaker/claude-code/) against campusGenAI's models
+- **Developer tooling** — use coding agents like [Claude Code](/keymaker/claude-code/) and [Codex](/keymaker/codex) with campusGenAI's models
 
 You authenticate with an API key and point your tools at the KeyMaker base URL:
 

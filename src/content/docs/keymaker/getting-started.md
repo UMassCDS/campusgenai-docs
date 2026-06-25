@@ -14,8 +14,8 @@ This page covers who can request KeyMaker access, how to request it, and how spo
 
 KeyMaker is self-funded: sponsors bring their own funding source to cover usage costs.
 
-:::caution[Speedtype required]
-A valid **speedtype is required at the time of request**. Usage is billed to the speedtype you provide. Have it ready before you start.
+:::caution[Speedtype or billing code required]
+A valid **speedtype or billing code is required at the time of request**. Usage is billed to the funding source you provide. Have it ready before you start.
 :::
 
 ## How to request access
