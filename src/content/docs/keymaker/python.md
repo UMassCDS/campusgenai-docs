@@ -100,6 +100,33 @@ print(response.usage)
 # CompletionUsage(completion_tokens=50, prompt_tokens=17, total_tokens=67, ...)
 ```
 
+## Integrate into your application
+
+For real use, create the client once and wrap requests in a function you can call throughout your code. Reading the key from the environment means the same function works in a script, a notebook, or a deployed service without changes.
+
+```python
+import os
+import openai
+
+client = openai.OpenAI(
+    api_key=os.environ["KEYMAKER_API_KEY"],
+    base_url="https://thekeymaker.umass.edu/v1",
+)
+
+def ask(prompt, model="claude-opus-4-8"):
+    response = client.chat.completions.create(
+        model=model,
+        messages=[{"role": "user", "content": prompt}],
+    )
+    return response.choices[0].message.content
+
+# Reuse it across your application
+for topic in ["photosynthesis", "tariffs", "tectonic plates"]:
+    print(ask(f"Explain {topic} in one sentence."))
+```
+
+This is the same call you made above, factored so the client is configured in one place and reused — the pattern behind batch processing and research pipelines.
+
 ## Troubleshooting
 
 **Authentication errors**
