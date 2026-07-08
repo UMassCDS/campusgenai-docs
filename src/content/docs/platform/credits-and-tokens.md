@@ -7,17 +7,12 @@ Every conversation on campusGenAI consumes **tokens**, which draw down your **cr
 
 ## Credits
 
-Credits are your usage budget on the platform. Each user has a credit balance and a **refill interval** (typically one day), both of which are configured by your institution's administrator.
+Credits are your usage budget on the platform. Each user has a credit **allocation**, configured by your institution's administrator.
 
-Your balance carries over between sessions. Refills happen automatically, but only when two conditions are true:
+Refills happen automatically **every night** around 2:15 AM in your deployment's time zone. Each night your balance is reset back up to your full allocation. Credits **do not stack**: any unused balance from the previous day does not carry over and accumulate, so you start each day with the same fresh allocation rather than a growing surplus.
 
-1. Your current balance isn't enough to send your next message, **and**
-2. The refill interval has elapsed since your last refill.
-
-This means you won't get a fresh top-up while you still have credits left. The system tops you up only when you actually need it.
-
-:::note
-The refill mechanism described here is under active development and may change. Check this page for the most current behavior.
+:::note[What changed]
+If you used campusGenAI before June 2026, refills worked differently. Previously, your balance only topped up when it was too low to send your next message **and** a set refill interval had elapsed — so you wouldn't get a fresh top-up while you still had credits left. That on-demand mechanism has been **retired**. Refills are now a scheduled nightly reset, as described above.
 :::
 
 ## Tokens
@@ -47,7 +42,7 @@ A quick chat with a standard model uses a small fraction of a daily allocation. 
 2. Select **Settings**.
 3. Open the **Balance** tab. Your current balance and the **Next Refill** time are shown there.
 
-If the time on the "Next Refill" line has passed but your balance hasn't updated, send a new message — the act of sending triggers the refill check. Refresh the Balance tab and you'll see the new amount.
+The **Next Refill** line shows when your balance will next be topped up. Refills run automatically overnight, so there's nothing you need to do — check back the next morning and your balance will already be reset to your full allocation.
 
 ## Storage usage
 

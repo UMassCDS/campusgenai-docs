@@ -23,6 +23,7 @@ Model availability varies by deployment. Not all models listed here may be avail
 | Claude 4.6 Opus | Anthropic | $$$ | Agentic coding, tool use, long-context reasoning, enterprise workflows | Most capable Claude model; use when quality matters most |
 | Claude 4.6 Sonnet | Anthropic | $$$ | Hybrid reasoning, agentic tasks, long-form analysis | Strong default for complex work; handles long context well |
 | Claude 4.5 Haiku | Anthropic | $ | Lightweight, fast chat and analysis | Fastest Claude option; cost-efficient |
+| DeepSeek V4 Pro | DeepSeek | $$ | Advanced reasoning, coding, math, technical work | DeepSeek's flagship model; open-weight, strong all-around technical performance |
 | DeepSeek-R1 | DeepSeek | $$ | Deep reasoning, math, technical code | Open-weight reasoning specialist |
 | LLaMA 3 70B Instruct | Meta | $$ | Instruction following | Open-weight model |
 | Mistral Large | Mistral | $ | Complex reasoning | Strong general-purpose reasoning |
@@ -42,7 +43,7 @@ Use this as a starting point — the right model depends on your specific task a
 
 **For high-stakes or complex work:** Claude 4.6 Opus is the most capable Claude model — good for detailed analysis, nuanced writing, agentic workflows, and complex multi-step problems.
 
-**For code:** GPT-5 Codex is purpose-built for software tasks. DeepSeek-R1 is strong for code, math, and technical reasoning. Claude 4.6 Opus also handles agentic coding well.
+**For code:** GPT-5 Codex is purpose-built for software tasks. DeepSeek V4 Pro and DeepSeek-R1 are both strong for code, math, and technical reasoning. Claude 4.6 Opus also handles agentic coding well.
 
 **For image generation:** GPT-5.2, GPT-5, GPT-5-mini, and the Claude 4.6 family all support generating images via tool use — describe what you want and the model will create it.
 
