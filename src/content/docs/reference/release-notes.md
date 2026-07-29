@@ -5,6 +5,22 @@ description: Platform updates and changes to campusGenAI.
 
 ## 2026
 
+### July 2026
+
+- **New model:** Added Grok 4.3.
+- **Private chat projects:** Organize conversations into projects. Create, name, and switch between workspaces from the sidebar.
+- **Pinned conversations:** Pin important chats to the top of your sidebar for quick access.
+- **Multi-quote and reference selected text:** Highlight text in any message to open the quote popup. Selections appear as chips above the input so you can reference them in your next message.
+- **Real-time token and usage gauge:** A live context usage gauge. Hover for a snapshot, click for a full breakdown.
+- **Skills:** Agents can now use skills — reusable sets of instructions. Invoke them in the agent builder or by typing `$` in chat.
+- **Message timestamps:** Hover any message to see its timestamp.
+- **Message navigator:** Longer conversations now show a navigator on the right side. Drag it to scrub through message history.
+- **Keyboard shortcuts:** A global shortcut system, with a shortcuts dialog for discovering what's available.
+- **Redesigned settings:** The settings panel is now searchable and mobile-friendly.
+- **Tool artifacts:** Mermaid diagrams, code output, and file results render as inline artifact cards.
+
+*The timeline for these updates depends on your institution's deployment. You may not see these changes yet, but they're on the way.*
+
 ### June 2026
 
 - **New sidebar:** All features previously on the right-hand sidebar (agent builder, prompt builder, memories, files, bookmarks, and MCPs) are now on the left-hand sidebar.
