@@ -7,7 +7,7 @@ description: Platform updates and changes to campusGenAI.
 
 ### July 2026
 
-- **New model:** Added Grok 4.3.
+- **New models:** Added Mistral Large 3, Meta Llama 3.3 70B Instruct, DeepSeek V4 Pro, and Grok 4.3.
 - **Private chat projects:** Organize conversations into projects. Create, name, and switch between workspaces from the sidebar.
 - **Pinned conversations:** Pin important chats to the top of your sidebar for quick access.
 - **Multi-quote and reference selected text:** Highlight text in any message to open the quote popup. Selections appear as chips above the input so you can reference them in your next message.
@@ -24,7 +24,6 @@ description: Platform updates and changes to campusGenAI.
 ### June 2026
 
 - **New sidebar:** All features previously on the right-hand sidebar (agent builder, prompt builder, memories, files, bookmarks, and MCPs) are now on the left-hand sidebar.
-- **New models:** Added Mistral Large 3 and Meta Llama 3.3 70B Instruct, plus DeepSeek V4 Pro.
 - **New image model:** Image generation now uses GPT-Image-2, replacing GPT-Image-1.
 - **Nightly balance refills:** Credit balances now refill automatically every night. This replaces the previous on-demand refill (which topped up only when your balance ran low).
 - **Pinning and reordering:** Users can pin agents and models, with drag-and-drop reordering.
