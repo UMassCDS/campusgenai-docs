@@ -40,7 +40,7 @@ Your API key is billed to your sponsor's funding and should be protected like a 
 
 - **Never commit keys to a repository.** Keep them out of source control — use a config file like `~/.claude/settings.json`, environment variables, or a secrets manager.
 - **Never share your key** or paste it into shared documents, tickets, or chat.
-- **Rotate your key** periodically, and immediately if you suspect it's been exposed.
+- **[Rotate your key](/keymaker/rotating-your-key/)** periodically, and immediately if you suspect it's been exposed.
 - **Use one key per person or service** where possible, so usage is attributable and a single key can be revoked without disrupting everyone.
 - **Scrub keys from logs and screenshots** before sharing them for troubleshooting.
 
