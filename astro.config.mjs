@@ -87,6 +87,7 @@ export default defineConfig({
 					label: 'Security & Privacy',
 					items: [
 						{ label: 'Privacy & Data', slug: 'security/privacy-and-data' },
+						{ label: 'How Prompts Are Processed', slug: 'security/prompt-processing' },
 					],
 				},
 				{
