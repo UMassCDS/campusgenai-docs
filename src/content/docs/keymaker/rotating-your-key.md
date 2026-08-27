@@ -11,6 +11,10 @@ The process has three parts: regenerate your key in the portal, update it everyw
 Treat it as compromised. Anyone with your key can use models billed to your sponsor's funding. Get a new key and retire the old one right away, then update your tools — don't wait for a scheduled rotation.
 :::
 
+:::note[Which KeyMaker URL do I use?]
+The examples below show the **UMass Amherst** URL, `https://thekeymaker.umass.edu`. If you were onboarded to the **Demo** deployment, use `https://keymaker.demo.campusgenai.org` everywhere it appears instead. Not sure which deployment you're on? Ask your sponsor or your institution's platform admin.
+:::
+
 ## 1. Regenerate your key
 
 Your key lives in the **KeyMaker portal in campusGenAI**:
@@ -49,6 +53,8 @@ Your key is stored in `~/.claude/settings.json` as `ANTHROPIC_AUTH_TOKEN`.
      }
    }
    ```
+
+   On the **Demo** deployment, use `"ANTHROPIC_BASE_URL": "https://keymaker.demo.campusgenai.org"` instead.
 
 3. Save the file. In `nano`, that's `Ctrl + O` then `Enter`, and exit with `Ctrl + X`.
 
@@ -124,6 +130,8 @@ Test the new key directly before relying on it. This lists the models your accou
 curl https://thekeymaker.umass.edu/v1/models \
   -H "Authorization: Bearer $KEYMAKER_API_KEY"
 ```
+
+On the **Demo** deployment, use `https://keymaker.demo.campusgenai.org/v1/models` instead.
 
 For Claude Code, just start `claude` and send a prompt; for Python, run a small request as shown on the [Python API Access](/keymaker/python/) page. If any tool still returns an authentication error, it's likely still holding the old key — recheck that tool's configuration.
 
