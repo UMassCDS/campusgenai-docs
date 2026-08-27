@@ -5,6 +5,10 @@ description: Configure the OpenAI Codex CLI to use campusGenAI models through Ke
 
 [OpenAI Codex CLI](https://github.com/openai/codex) is OpenAI's command-line coding agent. Because KeyMaker is OpenAI-compatible, you can point Codex at KeyMaker and run it against campusGenAI's models — billed to your sponsor's funding — instead of a personal OpenAI account.
 
+:::note[Which KeyMaker URL do I use?]
+The examples below show the **UMass Amherst** URL, `https://thekeymaker.umass.edu`. If you were onboarded to the **Demo** deployment, use `https://keymaker.demo.campusgenai.org` everywhere it appears instead. Not sure which deployment you're on? Ask your sponsor or your institution's platform admin.
+:::
+
 ## Prerequisites
 
 - Terminal access (macOS, Linux, or Windows PowerShell)
@@ -97,6 +101,8 @@ curl https://thekeymaker.umass.edu/v1/models \
   -H "Authorization: Bearer $KEYMAKER_API_KEY"
 ```
 
+On the **Demo** deployment, use `https://keymaker.demo.campusgenai.org/v1/models` instead.
+
 Make note of the model name you want to use (for example, `gpt5`).
 
 ## Configure Codex
@@ -126,6 +132,8 @@ Make note of the model name you want to use (for example, `gpt5`).
    env_key = "KEYMAKER_API_KEY"
    wire_api = "responses"
    ```
+
+   On the **Demo** deployment, use `base_url = "https://keymaker.demo.campusgenai.org/v1"` instead.
 
    In `nano`, save with `Ctrl + O` then `Enter`, and exit with `Ctrl + X`. (The same shortcuts work on macOS, Linux, and Windows via WSL/Git Bash.)
 
@@ -180,6 +188,8 @@ Confirm your key is available with `echo $KEYMAKER_API_KEY`, then test it direct
 curl https://thekeymaker.umass.edu/v1/models \
   -H "Authorization: Bearer $KEYMAKER_API_KEY"
 ```
+
+On the **Demo** deployment, use `https://keymaker.demo.campusgenai.org/v1/models` instead.
 
 If that fails, verify the key is correct, hasn't expired or been revoked, and re-copy it from the KeyMaker portal if needed.
 

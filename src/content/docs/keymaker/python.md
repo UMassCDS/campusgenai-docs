@@ -5,6 +5,10 @@ description: Call campusGenAI models from Python through KeyMaker using the Open
 
 KeyMaker is OpenAI-compatible, so you can call campusGenAI's models from Python with the official [`openai`](https://pypi.org/project/openai/) SDK — just point it at the KeyMaker base URL and authenticate with your API key. This is the foundation for research pipelines, batch processing, and custom applications.
 
+:::note[Which KeyMaker URL do I use?]
+The examples below show the **UMass Amherst** URL, `https://thekeymaker.umass.edu`. If you were onboarded to the **Demo** deployment, use `https://keymaker.demo.campusgenai.org` everywhere it appears instead. Not sure which deployment you're on? Ask your sponsor or your institution's platform admin.
+:::
+
 ## Prerequisites
 
 - Python 3.8 or newer (`python --version`)
@@ -57,6 +61,8 @@ client = openai.OpenAI(
     base_url="https://thekeymaker.umass.edu/v1",
 )
 ```
+
+On the **Demo** deployment, use `https://keymaker.demo.campusgenai.org/v1` instead.
 
 :::tip[Working in a notebook?]
 If your environment doesn't expose `KEYMAKER_API_KEY`, you can pass the key directly to `api_key=` instead — but delete it before saving or sharing the notebook so your key isn't stored in the file.
@@ -125,6 +131,8 @@ for topic in ["photosynthesis", "tariffs", "tectonic plates"]:
     print(ask(f"Explain {topic} in one sentence."))
 ```
 
+On the **Demo** deployment, use `https://keymaker.demo.campusgenai.org/v1` instead.
+
 This is the same call you made above, factored so the client is configured in one place and reused — the pattern behind batch processing and research pipelines.
 
 ## Troubleshooting
@@ -143,7 +151,7 @@ If it prints `None`, the variable isn't set in this environment — re-run the [
 List the models available to your account (the snippet above) and update the `model` value to match exactly.
 
 **Connection or base-URL errors**
-Confirm `base_url` is exactly `https://thekeymaker.umass.edu/v1`, including the `/v1` suffix.
+Confirm `base_url` is exactly your deployment's URL — `https://thekeymaker.umass.edu/v1` for UMass Amherst, or `https://keymaker.demo.campusgenai.org/v1` for Demo — including the `/v1` suffix.
 
 :::note
 Available models and provider settings may change over time. If something stops working, re-check the [Model Comparison](/models/model-comparison/) page and your client configuration before reaching out.
