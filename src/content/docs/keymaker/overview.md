@@ -21,7 +21,7 @@ The campusGenAI chat interface is great for conversational, day-to-day use. KeyM
 - **Research workflows** — batch processing, data analysis, and custom AI pipelines
 - **Developer tooling** — use coding agents like [Claude Code](/keymaker/claude-code/) and [Codex](/keymaker/codex) with campusGenAI's models
 
-You authenticate with an API key and configure your tools with a base URL. That base URL is a setting inside your tools, not a site you visit — the [Claude Code](/keymaker/claude-code/), [Codex](/keymaker/codex/), and [Python](/keymaker/python/) guides each show the exact value to use for your deployment.
+You authenticate with an API key and configure your tools with a base URL. Both come from the **KeyMaker portal in campusGenAI** (profile picture → **KeyMaker**), where the base URL appears in the **API Endpoint** box. That base URL is a setting inside your tools, not a site you visit — the [Claude Code](/keymaker/claude-code/), [Codex](/keymaker/codex/), and [Python](/keymaker/python/) guides each show where it goes.
 
 ## Who it's for
 

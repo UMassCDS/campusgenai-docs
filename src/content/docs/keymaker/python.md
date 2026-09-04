@@ -5,8 +5,8 @@ description: Call campusGenAI models from Python through KeyMaker using the Open
 
 KeyMaker is OpenAI-compatible, so you can call campusGenAI's models from Python with the official [`openai`](https://pypi.org/project/openai/) SDK — just point it at the KeyMaker base URL and authenticate with your API key. This is the foundation for research pipelines, batch processing, and custom applications.
 
-:::note[Which KeyMaker URL do I use?]
-The examples below show the **UMass Amherst** URL, `https://thekeymaker.umass.edu`. If you were onboarded to the **Demo** deployment, use `https://keymaker.demo.campusgenai.org` everywhere it appears instead. Not sure which deployment you're on? Ask your sponsor or your institution's platform admin.
+:::note[Find your KeyMaker URL]
+Each institution's deployment has its own KeyMaker URL. Find yours in the **KeyMaker portal in campusGenAI** (profile picture → **KeyMaker**), in the **API Endpoint** box. Use that value everywhere these instructions show `YOUR_KEYMAKER_URL`, and keep the `/v1` suffix the examples add to it.
 :::
 
 ## Prerequisites
@@ -50,7 +50,7 @@ Anyone with your key can use models billed to your funding source. Never share i
 
 ## Create the client
 
-Point the OpenAI client at the KeyMaker base URL and read your key from the environment:
+Point the OpenAI client at the KeyMaker base URL and read your key from the environment. Replace `YOUR_KEYMAKER_URL` with the **API Endpoint** value from your KeyMaker portal, keeping the `/v1` suffix:
 
 ```python
 import os
@@ -58,11 +58,9 @@ import openai
 
 client = openai.OpenAI(
     api_key=os.environ["KEYMAKER_API_KEY"],
-    base_url="https://thekeymaker.umass.edu/v1",
+    base_url="YOUR_KEYMAKER_URL/v1",
 )
 ```
-
-On the **Demo** deployment, use `https://keymaker.demo.campusgenai.org/v1` instead.
 
 :::tip[Working in a notebook?]
 If your environment doesn't expose `KEYMAKER_API_KEY`, you can pass the key directly to `api_key=` instead — but delete it before saving or sharing the notebook so your key isn't stored in the file.
@@ -116,7 +114,7 @@ import openai
 
 client = openai.OpenAI(
     api_key=os.environ["KEYMAKER_API_KEY"],
-    base_url="https://thekeymaker.umass.edu/v1",
+    base_url="YOUR_KEYMAKER_URL/v1",
 )
 
 def ask(prompt, model="claude-opus-4-8"):
@@ -130,8 +128,6 @@ def ask(prompt, model="claude-opus-4-8"):
 for topic in ["photosynthesis", "tariffs", "tectonic plates"]:
     print(ask(f"Explain {topic} in one sentence."))
 ```
-
-On the **Demo** deployment, use `https://keymaker.demo.campusgenai.org/v1` instead.
 
 This is the same call you made above, factored so the client is configured in one place and reused — the pattern behind batch processing and research pipelines.
 
@@ -151,7 +147,7 @@ If it prints `None`, the variable isn't set in this environment — re-run the [
 List the models available to your account (the snippet above) and update the `model` value to match exactly.
 
 **Connection or base-URL errors**
-Confirm `base_url` is exactly your deployment's URL — `https://thekeymaker.umass.edu/v1` for UMass Amherst, or `https://keymaker.demo.campusgenai.org/v1` for Demo — including the `/v1` suffix.
+Confirm `base_url` matches the **API Endpoint** value in your KeyMaker portal exactly, with `/v1` appended.
 
 :::note
 Available models and provider settings may change over time. If something stops working, re-check the [Model Comparison](/models/model-comparison/) page and your client configuration before reaching out.

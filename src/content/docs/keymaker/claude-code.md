@@ -5,8 +5,8 @@ description: Configure Claude Code, Anthropic's CLI coding agent, to use campusG
 
 [Claude Code](https://www.anthropic.com/claude-code) is Anthropic's command-line coding agent. This page walks you through pointing it at KeyMaker so it runs on campusGenAI's models, billed to your sponsor's funding.
 
-:::note[Which KeyMaker URL do I use?]
-The examples below show the **UMass Amherst** URL, `https://thekeymaker.umass.edu`. If you were onboarded to the **Demo** deployment, use `https://keymaker.demo.campusgenai.org` everywhere it appears instead. Not sure which deployment you're on? Ask your sponsor or your institution's platform admin.
+:::note[Find your KeyMaker URL]
+Each institution's deployment has its own KeyMaker URL. Find yours in the **KeyMaker portal in campusGenAI** (profile picture → **KeyMaker**), in the **API Endpoint** box. Use that value everywhere these instructions show `YOUR_KEYMAKER_URL`.
 :::
 
 ## Prerequisites
@@ -42,18 +42,16 @@ The examples below show the **UMass Amherst** URL, `https://thekeymaker.umass.ed
 
 5. Create a new file called `settings.json` inside `~/.claude`.
 
-6. Open `settings.json` in your preferred text editor and add the configuration below. Replace `YOUR_KEY_HERE` with your actual KeyMaker API key:
+6. Open `settings.json` in your preferred text editor and add the configuration below. Replace `YOUR_KEY_HERE` with your actual KeyMaker API key, and `YOUR_KEYMAKER_URL` with the **API Endpoint** value from your KeyMaker portal:
 
    ```json
    {
      "env": {
        "ANTHROPIC_AUTH_TOKEN": "YOUR_KEY_HERE",
-       "ANTHROPIC_BASE_URL": "https://thekeymaker.umass.edu"
+       "ANTHROPIC_BASE_URL": "YOUR_KEYMAKER_URL"
      }
    }
    ```
-
-   On the **Demo** deployment, use `"ANTHROPIC_BASE_URL": "https://keymaker.demo.campusgenai.org"` instead.
 
    :::tip[Already set up Codex?]
    If you configured [Codex](/keymaker/codex/) first, your key is already saved as the `KEYMAKER_API_KEY` environment variable. You can print it to copy into `ANTHROPIC_AUTH_TOKEN`:
@@ -88,7 +86,7 @@ The install directory isn't on your path. Re-run step 3, then close and reopen y
 - Check that your sponsor's funding is active and your access hasn't been removed.
 
 **Connection or base URL errors**
-- Verify `ANTHROPIC_BASE_URL` is exactly your deployment's URL — `https://thekeymaker.umass.edu` for UMass Amherst, or `https://keymaker.demo.campusgenai.org` for Demo — with no trailing slash.
+- Verify `ANTHROPIC_BASE_URL` matches the **API Endpoint** value in your KeyMaker portal exactly, with no trailing slash.
 - Confirm your `settings.json` is valid JSON — a missing comma or brace will prevent it from loading. Paste it into a JSON validator if unsure.
 - If you're off-campus, make sure you can reach institutional services (some require a VPN).
 
