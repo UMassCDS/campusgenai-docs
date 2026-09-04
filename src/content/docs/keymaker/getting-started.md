@@ -52,6 +52,12 @@ Your API key is **shown in the KeyMaker portal in campusGenAI** — no key is em
 Anyone with your key can use models billed to your funding source. Never share it or commit it to a repository. See [security best practices](/keymaker/usage/#security-best-practices).
 :::
 
+## Find your API endpoint
+
+Alongside your key, the KeyMaker portal shows an **API Endpoint** box containing the base URL your tools should point at. Each institution's deployment has its own endpoint, so copy the value shown in your own portal rather than one you've seen elsewhere.
+
+You'll need it when you set up [Claude Code](/keymaker/claude-code/), [Codex](/keymaker/codex/), or [Python](/keymaker/python/) — each of those guides marks the spot with `YOUR_KEYMAKER_URL`.
+
 ## Team provisioning (for sponsors)
 
 Once a sponsor request is approved, sponsors manage their team **through the KeyMaker portal in campusGenAI**:

@@ -5,8 +5,8 @@ description: Configure the OpenAI Codex CLI to use campusGenAI models through Ke
 
 [OpenAI Codex CLI](https://github.com/openai/codex) is OpenAI's command-line coding agent. Because KeyMaker is OpenAI-compatible, you can point Codex at KeyMaker and run it against campusGenAI's models — billed to your sponsor's funding — instead of a personal OpenAI account.
 
-:::note[Which KeyMaker URL do I use?]
-The examples below show the **UMass Amherst** URL, `https://thekeymaker.umass.edu`. If you were onboarded to the **Demo** deployment, use `https://keymaker.demo.campusgenai.org` everywhere it appears instead. Not sure which deployment you're on? Ask your sponsor or your institution's platform admin.
+:::note[Find your KeyMaker URL]
+Each institution's deployment has its own KeyMaker URL. Find yours in the **KeyMaker portal in campusGenAI** (profile picture → **KeyMaker**), in the **API Endpoint** box. Use that value everywhere these instructions show `YOUR_KEYMAKER_URL`, and keep the `/v1` suffix the examples add to it.
 :::
 
 ## Prerequisites
@@ -94,14 +94,12 @@ Anyone with your key can use models billed to your funding source. Never share i
 
 ## See available models
 
-List the models your KeyMaker account can use:
+List the models your KeyMaker account can use, substituting the **API Endpoint** value from your KeyMaker portal:
 
 ```bash
-curl https://thekeymaker.umass.edu/v1/models \
+curl YOUR_KEYMAKER_URL/v1/models \
   -H "Authorization: Bearer $KEYMAKER_API_KEY"
 ```
-
-On the **Demo** deployment, use `https://keymaker.demo.campusgenai.org/v1/models` instead.
 
 Make note of the model name you want to use (for example, `gpt5`).
 
@@ -119,7 +117,7 @@ Make note of the model name you want to use (for example, `gpt5`).
    nano ~/.codex/config.toml
    ```
 
-3. Add the following configuration, then save. Replace `gpt5` with any model from your available list if your team uses a different one:
+3. Add the following configuration, then save. Replace `YOUR_KEYMAKER_URL` with the **API Endpoint** value from your KeyMaker portal, keeping the `/v1` suffix, and replace `gpt5` with any model from your available list if your team uses a different one:
 
    ```toml
    model_provider = "keymaker"
@@ -128,12 +126,10 @@ Make note of the model name you want to use (for example, `gpt5`).
 
    [model_providers.keymaker]
    name = "Keymaker"
-   base_url = "https://thekeymaker.umass.edu/v1"
+   base_url = "YOUR_KEYMAKER_URL/v1"
    env_key = "KEYMAKER_API_KEY"
    wire_api = "responses"
    ```
-
-   On the **Demo** deployment, use `base_url = "https://keymaker.demo.campusgenai.org/v1"` instead.
 
    In `nano`, save with `Ctrl + O` then `Enter`, and exit with `Ctrl + X`. (The same shortcuts work on macOS, Linux, and Windows via WSL/Git Bash.)
 
@@ -185,11 +181,9 @@ Most new users can skip this section. It's only needed if Codex keeps using a pr
 Confirm your key is available with `echo $KEYMAKER_API_KEY`, then test it directly:
 
 ```bash
-curl https://thekeymaker.umass.edu/v1/models \
+curl YOUR_KEYMAKER_URL/v1/models \
   -H "Authorization: Bearer $KEYMAKER_API_KEY"
 ```
-
-On the **Demo** deployment, use `https://keymaker.demo.campusgenai.org/v1/models` instead.
 
 If that fails, verify the key is correct, hasn't expired or been revoked, and re-copy it from the KeyMaker portal if needed.
 
