@@ -16,7 +16,24 @@ The only exceptions are things you explicitly choose to share:
 
 All AI models in campusGenAI are accessed through enterprise cloud services (**AWS Bedrock** and **Microsoft Azure AI Foundry**) whose data-protection terms prevent your conversations and files from being used to train foundation models.
 
+### Model provider policies
+
+Each provider publishes the data-handling terms that apply to the models campusGenAI serves through it:
+
+| Provider | Data policy |
+|----------|-------------|
+| **Microsoft Azure AI Foundry** (including Azure OpenAI) | [Azure AI Foundry data privacy and security](https://learn.microsoft.com/en-us/azure/foundry/responsible-ai/openai/data-privacy?tabs=azure-portal) |
+| **AWS Bedrock** | [Data protection in Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/data-protection.html) |
+
 For contractual specifics, see [Security Architecture](/security/architecture/).
+
+## Connected Google Workspace data
+
+campusGenAI can connect to Google Workspace — Google Drive, for example — through an MCP connector. Availability varies by deployment; see [MCP & External Tools](/skills/mcp-guides/).
+
+A connector reaches your Google data only after you explicitly connect your Google account and enable the connector on an agent, and it requests only the access scopes the feature needs. You can review or revoke that access at any time from your [Google Account permissions page](https://myaccount.google.com/permissions).
+
+**Limited Use compliance statement:** campusGenAI's use of raw or derived user data received from Google Workspace APIs will adhere to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements.
 
 ## Deleting conversations
 
