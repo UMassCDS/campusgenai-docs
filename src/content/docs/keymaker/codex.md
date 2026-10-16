@@ -101,7 +101,7 @@ curl YOUR_KEYMAKER_URL/v1/models \
   -H "Authorization: Bearer $KEYMAKER_API_KEY"
 ```
 
-Make note of the model name you want to use (for example, `gpt5`).
+Make note of the model name you want to use (for example, `gpt5`). You can also see the exact names in the **Available Models** list in your KeyMaker portal.
 
 ## Configure Codex
 

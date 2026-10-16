@@ -77,7 +77,7 @@ for model in models.data:
     print(f"- {model.id}")
 ```
 
-Make note of the model name you want to use (for example, `claude-opus-4-8`). See the [Model Comparison](/models/model-comparison/) page for what each model is best at.
+Make note of the model name you want to use (for example, `claude-opus-4-8`). You can also see the exact names in the **Available Models** list in your KeyMaker portal. See the [Model Comparison](/models/model-comparison/) page for what each model is best at.
 
 ## Send your first request
 

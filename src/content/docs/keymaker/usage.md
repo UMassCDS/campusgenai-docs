@@ -1,38 +1,29 @@
 ---
 title: Usage and Best Practices
-description: Monitoring KeyMaker usage, cost awareness for sponsors, security best practices, and when to use the API versus the chat interface.
+description: Monitoring KeyMaker usage, rate limits, security best practices, and when to use the API versus the chat interface.
 ---
 
 This page covers how KeyMaker usage works, how to keep an eye on cost, and how to use your API key safely.
 
-## Quotas and usage
+## Budgets and usage
 
-KeyMaker doesn't impose a fixed quota. Your usage draws on the **funding your sponsor allocates** — if the funding is there, you can use it however it's allocated to you. Sponsors control how that funding is distributed across their team in the KeyMaker portal.
+Your API usage draws on the **API budget** your Sponsor allocates to you. That budget is a spending cap: when it runs out, requests made with your key return an error until more funds are allocated. See [Billing & budgets](/keymaker/billing/) for how budgets are billed, how much to allocate, and how to request more.
 
 ## Monitoring usage
 
-Both users and sponsors monitor usage and cost in the **KeyMaker portal in campusGenAI** (profile picture → **KeyMaker**). Check it regularly to understand how much of your sponsor's funding you're consuming.
+Both users and Sponsors monitor usage and cost in the **KeyMaker portal in campusGenAI** (profile picture → **KeyMaker**). Check it regularly to understand how much of your Sponsor's funding you're consuming.
 
-## Cost awareness for sponsors
+Sponsors: keep in mind that programmatic workflows (batch jobs, pipelines) can consume far more than interactive chat use — a single script can make thousands of calls. Review usage regularly, especially after onboarding new team members, and remove team members who no longer need access.
 
-Because usage is billed to your speedtype, it's worth managing it actively:
+## Rate limits
 
-- Review usage in the KeyMaker portal regularly, especially after onboarding new team members.
-- Allocate funding across team members deliberately rather than leaving it open-ended.
-- Remove team members who no longer need access.
-- Keep in mind that programmatic workflows (batch jobs, pipelines) can consume far more than interactive chat use — a single script can make thousands of calls.
+Each key has a **requests-per-minute** and a **tokens-per-minute** limit. Your limits are shown on the **Rate Limits** card in the KeyMaker portal. Check yours there rather than assuming a number.
 
-## Requesting more funds
+If you see a **"too many requests"** error (HTTP 429), you've hit a rate limit:
 
-If you're running low on your allocation, the process is currently manual and depends on whether you're a team member or a sponsor.
-
-**Team members:** Request additional funds directly from your sponsor. Your sponsor controls how funding is allocated across the team in the KeyMaker portal and can increase your allocation from there.
-
-**Sponsors:** Request a budget top-up for your team within the KeyMaker portal. The request is sent to the admin portal for approval.
-
-:::note
-This process is manual today. Automated alerts and email notifications are planned for a future release.
-:::
+- Wait a moment and retry. Most client libraries can retry automatically with backoff.
+- For batch jobs, add a short delay between requests or reduce how many run in parallel.
+- Send fewer, larger requests where your workflow allows it.
 
 ## Security best practices
 

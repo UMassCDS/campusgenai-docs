@@ -20,6 +20,7 @@ The campusGenAI chat interface is great for conversational, day-to-day use. KeyM
 - **Custom applications** — build institutional tools and apps on top of campusGenAI's models
 - **Research workflows** — batch processing, data analysis, and custom AI pipelines
 - **Developer tooling** — use coding agents like [Claude Code](/keymaker/claude-code/) and [Codex](/keymaker/codex) with campusGenAI's models
+- **Extra chat credit** — sponsors can fund a team chat balance that members spend in the regular campusGenAI chat, with no API use required. See [Billing & budgets](/keymaker/billing/).
 
 You authenticate with an API key and configure your tools with a base URL. Both come from the **KeyMaker portal in campusGenAI** (profile picture → **KeyMaker**), where the base URL appears in the **API Endpoint** box. That base URL is a setting inside your tools, not a site you visit — the [Claude Code](/keymaker/claude-code/), [Codex](/keymaker/codex/), and [Python](/keymaker/python/) guides each show where it goes.
 
@@ -34,7 +35,7 @@ You authenticate with an API key and configure your tools with a base URL. Both 
 
 - **Institutional governance and data security** — KeyMaker runs through the same secure infrastructure as the chat platform: an AWS secure landing zone, approved for Level 3 data, with no data used to train models.
 - **Multi-model access** — the same set of AI models available on the campusGenAI chat platform is available through the API. See the [Model Comparison](/models/model-comparison/) page for what's offered.
-- **Sponsor-funded** — sponsors bring their own funding source (speedtype, grant, or department budget) to cover usage, so there's no additional burden on the institution's central budget.
+- **Sponsor-funded** — sponsors bring their own funding source (a billing code for a grant, department, or course budget) to cover usage, so there's no additional burden on the institution's central budget.
 - **Team provisioning** — sponsors can allocate API access and manage usage across their team members.
 
 ## How it differs from the chat interface
@@ -43,7 +44,7 @@ You authenticate with an API key and configure your tools with a base URL. Both 
 |---|---|---|
 | Access | Web interface, conversational | Programmatic — your code, CLI, or app |
 | Best for | Everyday questions, drafting, exploration | Automation, custom apps, research pipelines |
-| Funding | Included with your campusGenAI account | Sponsor-funded (speedtype required) |
+| Funding | Your default balance is included with your account. Extra team chat balance is sponsor-funded through KeyMaker | Sponsor-funded (billing code required) |
 
 Not sure which to use? See [Usage and Best Practices](/keymaker/usage/#when-to-use-the-api-vs-the-chat-interface).
 
