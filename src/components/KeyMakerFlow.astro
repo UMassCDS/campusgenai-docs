@@ -1,0 +1,29 @@
+---
+// KeyMaker funding-flow diagram. The SVG lives in src/assets/keymaker-flow.svg so the
+// marketing site can reuse the same file; inlining it here lets it pick up the docs
+// theme (light/dark toggle) through the --km-* variables in custom.css.
+import flow from '../assets/keymaker-flow.svg?raw';
+---
+
+<figure class="km-flow">
+	<Fragment set:html={flow} />
+	<figcaption>Each member can get either or both. A team can exist only to fund extra chat.</figcaption>
+</figure>
+
+<style>
+	.km-flow {
+		margin: 1.5rem auto;
+		max-width: 34rem;
+	}
+	.km-flow :global(svg) {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.km-flow figcaption {
+		margin-top: 0.75rem;
+		font-size: var(--sl-text-sm);
+		color: var(--sl-color-gray-3);
+		text-align: center;
+	}
+</style>

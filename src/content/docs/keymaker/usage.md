@@ -11,7 +11,7 @@ Your API usage draws on the **API budget** your Sponsor allocates to you. That b
 
 ## Monitoring usage
 
-Both users and Sponsors monitor usage and cost in the **KeyMaker portal in campusGenAI** (profile picture → **KeyMaker**). Check it regularly to understand how much of your Sponsor's funding you're consuming.
+Both users and Sponsors monitor usage and cost in the **KeyMaker portal in campusGenAI** (the **key icon** in the left side menu). Check it regularly to understand how much of your Sponsor's funding you're consuming.
 
 Sponsors: keep in mind that programmatic workflows (batch jobs, pipelines) can consume far more than interactive chat use — a single script can make thousands of calls. Review usage regularly, especially after onboarding new team members, and remove team members who no longer need access.
 

@@ -37,13 +37,38 @@ sponsor doesn't appear in the search, ask them to complete
 Every path starts the same way:
 
 1. Sign in to campusGenAI with your institutional credentials.
-2. Click your **profile picture** in the bottom left corner.
-3. Click **KeyMaker**.
+2. Click the **key icon** (**The KeyMaker**) in the left side menu. You can also open it
+   from your **profile picture** menu.
 
-The KeyMaker screen is titled **TheKeyMaker Budget Management** and opens on two tabs:
+KeyMaker opens as its own page, titled **TheKeyMaker Budget Management**, with two tabs:
 **Trial Key** and **Sponsor Access**.
 
-<!-- TODO: add profile-menu screenshot (1.53.27) here and in portal.md -->
+:::note[The KeyMaker page is changing]
+KeyMaker recently moved from a pop-up window to a dedicated page, and the new page is still
+rolling out, so your deployment may show the older pop-up for a while. The interface is
+also likely to change again soon, so labels and layout may differ from what's described
+here.
+:::
+
+## Teams and roles
+
+You can belong to **more than one team**, and a Sponsor can sponsor more than one team.
+Roles apply per team, not to your account as a whole, so you can sponsor one team and be a
+member of another at the same time.
+
+- **One key per team.** You have a separate API key for each team you belong to, so usage
+  and cost are tracked per team and attributed to the right funding source, for example a
+  specific grant.
+- **Team cards.** If you belong to more than one team, **Your Teams** on the **Sponsor
+  Access** tab shows a card for each team. With only one team, you won't see any cards:
+  KeyMaker shows that team directly. Purple cards are teams you sponsor (marked **PI**, which KeyMaker uses
+  interchangeably with Sponsor) and green cards are teams you're a member of (marked
+  **Member**). Each card also shows the team's status.
+- **Switching teams.** Select a team card to see that team's key, budget, and members.
+  Everything below the cards applies to the selected team only.
+
+If you used KeyMaker before multi-team support, your existing team and key carried over
+automatically. No action is needed.
 
 ## Path A — Register as a team sponsor
 
@@ -54,25 +79,36 @@ this page to whoever handles funding for your group: your PI, supervisor, or bus
 manager.
 
 1. Open KeyMaker and go to **Sponsor Access**.
-2. On the **Register as a team Sponsor** card, select **Register as Sponsor**.
+2. On the **Register as a team Sponsor** card, select **Register as Sponsor**. If you
+   already belong to a team, select **+ Register as a Sponsor** at the top of the page
+   instead.
 3. Complete the registration form:
    - **Full Name**
    - **Department**
-   - **Billing code** — the funding account your team's usage is charged to. Your
+   - **Billing code**: the funding account your team's usage is charged to. Your
      institution's administrators set this field's label, so it may appear as something
-     else, for example "Cost Center". You must be authorized to charge the account you
-     enter; if you're unsure which code to use, confirm with your department's business or
+     else, for example **Cost Center**. You must be authorized to charge the account you
+     enter. If you're unsure which code to use, confirm with your department's business or
      finance contact before submitting.
-   - **Initial budget** — the total available to your team. You don't need to get this
-     exactly right: funds can be added to your budget later.
-     <!-- TODO: confirm exact field labels + remaining fields below the fold -->
-4. Submit the form. An administrator verifies your billing code, then a platform
-   administrator approves your registration. Timing varies with verification.
-5. Once approved, open the **Team Requests** tab to review and approve join requests from
-   your members.
-6. Allocate funds to each member. By default **100% of your budget is allocated to you as
-   the sponsor**, so you must first un-allocate some of your own funds before you can give
-   them to anyone else.
+   - **Team / Group Name**: the name your members will see when they join. It
+     distinguishes your team from others billed to the same billing code, so pick
+     something recognizable, like your lab, course, or project.
+     <!-- TODO: confirm whether team names must be unique (system-enforced or convention; per institution or platform-wide) -->
+   - **Requested Budget (USD)**: the total available to your team. You don't need to get
+     this exactly right: you can request a top-up later.
+   - **Research Use Case**: how you plan to use the API.
+4. Select **Submit Registration**. Registering is a request, not instant access: your
+   billing code is verified and your registration is approved before your team is
+   created. Timing varies with verification, and you'll get an email when your request's
+   status changes.
+5. Once approved, members can request to join your team. You'll get an email for each
+   request, and it appears on your team's **Team Requests** tab. Approve or deny each
+   request. If you deny one, give a reason. The requester sees it and can resubmit.
+   <!-- TODO: exact approve/deny button labels (no screenshot of a pending request yet) -->
+6. Allocate funds on the **Team Members** tab. By default **100% of your budget is
+   allocated to you as the Sponsor**, so first lower your own budget with **Edit Budget**
+   to free up funds (shown as **Unallocated**), then use **Fund API key** and **Fund chat**
+   on each member's row.
 7. For each member, decide how much goes to **API budget** and how much to **chat
    balance**. These behave very differently at billing time — read
    [Billing & budgets](/keymaker/billing/) before you allocate. In short: an API budget is
@@ -86,23 +122,30 @@ Next: [Billing & budgets](/keymaker/billing/) · [Portal tour](/keymaker/portal/
 
 1. Confirm your sponsor has registered (see the note above).
 2. Open KeyMaker and go to **Sponsor Access**.
-3. On the **Join your Sponsor's team** card, select **Request to Join**.
+3. On the **Join your Sponsor's team** card, select **Request to Join**. If you already
+   belong to a team, select **+ Join a Sponsor's Team** at the top of the page instead.
 4. Under **Find your Sponsor**, search by name or email. Type at least two letters, then
-   pick your sponsor from the results.
+   pick your sponsor from the results. If your sponsor runs more than one team, choose
+   the team you want to join.
 5. Answer **What will you use the API for?**
-6. Submit the request. Your sponsor approves it from their **Team Requests** tab and
-   allocates your funds.
-7. Once approved, return to KeyMaker. Your member view shows:
+6. Select **Submit Request**. Your sponsor gets an email and reviews your request on their
+   **Team Requests** tab.
+7. You'll get an email when your request is approved or denied. If it's denied, KeyMaker
+   shows your sponsor's reason. Review your details and resubmit.
+8. Once approved, return to KeyMaker. If you belong to more than one team, select the new
+   team's card. Your member view shows:
    - your sponsor's name in a banner at the top
    - your **masked API key**, with **Regenerate Key** if you need to replace it
    - your **API Endpoint**
    - your **API Budget** and **Chat Balance** cards
    - your **Rate Limits** (requests per minute and tokens per minute)
    - your **Available Models**
-8. Copy your key and endpoint, then follow a setup guide:
+9. Copy your key and endpoint, then follow a setup guide:
    [API usage](/keymaker/python/) ·
    [Connect to Claude Code](/keymaker/claude-code/) ·
    [Connect to Codex](/keymaker/codex/)
+
+To join another team later, repeat these steps. Each team gives you a separate key.
 
 :::caution[Treat your key like a password]
 Your key bills against your sponsor's funding account. Don't commit it to a repository,
@@ -163,11 +206,10 @@ spot with `YOUR_KEYMAKER_URL`.
   from examples.
 - **Know your rate limits** — requests-per-minute and tokens-per-minute limits are shown
   on your **Rate Limits** card. Check yours there rather than assuming a number.
-- **Chat vs. API** — your default balance (shown as **Free balance** for now) covers chat
+- **Chat vs. API** — your default balance (shown as **Balance**) covers chat
   in campusGenAI. A team chat balance is separate and is funded by your sponsor. See
   [Credits & tokens](/platform/credits-and-tokens/).
 - **Billing** — API usage is pay-as-you-go and billed monthly to the billing code on file.
-  Model usage is billed at provider rates plus a standard institutional overhead.
 
 ## Getting help
 

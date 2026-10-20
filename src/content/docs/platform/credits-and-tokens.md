@@ -53,6 +53,8 @@ The **Next Refill** line shows when your balance will next be reset. Refills are
 
 If you need more chat credit than your default balance, a sponsor can fund a **team chat balance** for you through [KeyMaker](/keymaker/overview/). You spend it in the regular chat, with no API use or coding required. Ask your PI, supervisor, or department to [register as a sponsor and add you to their team](/keymaker/getting-started/).
 
+To choose which wallet pays for your chats, select the wallet chip in the message box (or the wallet entry at the top of your profile picture menu). Under **Switch wallet**, pick **Balance** (your default balance) or a team wallet.
+
 A team chat balance is separate from your default balance. It's a one-time allocation that doesn't refill when your default balance does. See [Billing & budgets](/keymaker/billing/) for how it's billed.
 
 ## Storage usage

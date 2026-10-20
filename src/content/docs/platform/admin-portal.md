@@ -89,6 +89,21 @@ Depending on your deployment type, you may be able to configure:
 
 Contact the campusGenAI team for changes that require backend configuration.
 
+## KeyMaker notifications
+
+Administrators control the email notifications KeyMaker sends. Each notification type can be turned on or off on its own, and a master **Enabled** switch controls all of them at once.
+
+**Approvers** (finance and admins) are notified when:
+
+- a new Sponsor registration or budget top-up needs review. This goes to the finance list, or to the admin list if no finance list is set.
+- finance has verified a request and it needs final approval
+
+**Sponsors** are notified when someone requests to join their team, when a member's join request is approved, and when the status of their registration or top-up request changes.
+
+**Members** are notified when their join request is approved or denied, when their API budget or chat balance changes, and when they're removed from a team.
+
+<!-- TODO: confirm where these toggles live in the admin portal; confirm whether admin usage/cost views changed for multi-team users -->
+
 ## Best practices
 
 - Review usage analytics monthly to understand adoption across your institution or organization
