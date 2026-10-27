@@ -5,6 +5,14 @@ description: Platform updates and changes to campusGenAI.
 
 ## 2026
 
+### October 2026
+
+- **KeyMaker multi-team support:** You can now belong to more than one team, and Sponsors can sponsor more than one team, including sponsoring one team while being a member of another. Each team keeps its own API key, so usage and cost stay attributed to the right funding source. Existing keys and teams carried over automatically, with no action needed.
+- **KeyMaker page:** KeyMaker is now a dedicated page, opened from the key icon in the left side menu, instead of a pop-up. Switch teams, request to join a team, or request to sponsor a new one from the same place. Join requests are approved by the team's Sponsor, and sponsoring a new team still requires approval.
+- **KeyMaker email notifications:** Sponsors and members are emailed as join requests, budgets, and team membership change. See [Portal Tour](/keymaker/portal/#email-notifications).
+
+<!-- TODO: add a downtime line only if KeyMaker was unavailable during the deploy -->
+
 ### July 2026
 
 - **New models:** Added Mistral Large 3, Meta Llama 3.3 70B Instruct, DeepSeek V4 Pro, and Grok 4.3.

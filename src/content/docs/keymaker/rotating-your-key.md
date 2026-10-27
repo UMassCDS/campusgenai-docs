@@ -19,8 +19,8 @@ Rotating a key replaces the key only — your deployment's base URL stays the sa
 
 Your key lives in the **KeyMaker portal in campusGenAI**:
 
-1. Click your **profile picture** in the top corner.
-2. Select **KeyMaker**.
+1. Click the **key icon** (**The KeyMaker**) in the left side menu.
+2. If you belong to more than one team, select the card for the team whose key you want to replace. Each team has its own key, and regenerating replaces only that team's key.
 3. Find your API key — it's shown masked (for example, `sk-...8yeg`) — and click **Regenerate Key** below it.
 
 Regenerating issues a **new** key and retires the old one, so your previous key stops working immediately. Copy the new key somewhere safe for the next few steps.

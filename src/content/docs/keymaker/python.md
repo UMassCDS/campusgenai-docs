@@ -6,7 +6,7 @@ description: Call campusGenAI models from Python through KeyMaker using the Open
 KeyMaker is OpenAI-compatible, so you can call campusGenAI's models from Python with the official [`openai`](https://pypi.org/project/openai/) SDK — just point it at the KeyMaker base URL and authenticate with your API key. This is the foundation for research pipelines, batch processing, and custom applications.
 
 :::note[Find your KeyMaker URL]
-Each institution's deployment has its own KeyMaker URL. Find yours in the **KeyMaker portal in campusGenAI** (profile picture → **KeyMaker**), in the **API Endpoint** box. Use that value everywhere these instructions show `YOUR_KEYMAKER_URL`, and keep the `/v1` suffix the examples add to it.
+Each institution's deployment has its own KeyMaker URL. Find yours in the **KeyMaker portal in campusGenAI** (the **key icon** in the left side menu), in the **API Endpoint** box. If you belong to more than one team, select the team's card first: each team has its own key. Use that value everywhere these instructions show `YOUR_KEYMAKER_URL`, and keep the `/v1` suffix the examples add to it.
 :::
 
 ## Prerequisites
@@ -77,7 +77,7 @@ for model in models.data:
     print(f"- {model.id}")
 ```
 
-Make note of the model name you want to use (for example, `claude-opus-4-8`). See the [Model Comparison](/models/model-comparison/) page for what each model is best at.
+Make note of the model name you want to use (for example, `claude-opus-4-8`). You can also see the exact names in the **Available Models** list in your KeyMaker portal. See the [Model Comparison](/models/model-comparison/) page for what each model is best at.
 
 ## Send your first request
 

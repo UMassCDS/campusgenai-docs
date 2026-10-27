@@ -352,3 +352,39 @@ a.sl-link-button.minimal:hover {
 	background: rgba(30, 122, 136, 0.18);
 	color: inherit;
 }
+
+/* ---------- KeyMaker path colors (API access vs. extra chat) ----------
+   Used by the overview cards and src/assets/keymaker-flow.svg. */
+:root,
+:root[data-theme='dark'] {
+	--km-api: #5ab5c2;
+	--km-api-low: #002a4c;
+	--km-chat: #cbd5e1;
+	--km-chat-low: #0f3a5c;
+	--km-surface: #001d36;
+	--km-line: #1a4a6e;
+	--km-wire: #94a3b8;
+	--km-text: #ffffff;
+	--km-muted: #cbd5e1;
+}
+:root[data-theme='light'] {
+	--km-api: #1e7a88;
+	--km-api-low: #e8f8fb;
+	--km-chat: #002a4c;
+	--km-chat-low: #f1f5f9;
+	--km-surface: #ffffff;
+	--km-line: #cbd5e1;
+	--km-wire: #64748b;
+	--km-text: #002a4c;
+	--km-muted: #475569;
+}
+.km-paths .card:nth-child(1) {
+	--sl-card-border: var(--km-api);
+	--sl-card-bg: var(--km-api-low);
+	border-top: 3px solid var(--km-api);
+}
+.km-paths .card:nth-child(2) {
+	--sl-card-border: var(--km-chat);
+	--sl-card-bg: var(--km-chat-low);
+	border-top: 3px solid var(--km-chat);
+}

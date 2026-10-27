@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 368" role="img" aria-labelledby="km-flow-title km-flow-desc" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif">
+  <title id="km-flow-title">How KeyMaker funding works</title>
+  <desc id="km-flow-desc">A Sponsor's billing code funds a team budget. The Sponsor splits the team budget into API budgets, used in Claude Code, Codex, scripts and apps, and chat balances, used in the regular campusGenAI chat.</desc>
+  <style>
+    /* Colors read page-level --km-* variables when inlined (docs site), and fall back
+       to the campusGenAI palette when the file is used on its own (e.g. marketing site). */
+    .box { fill: var(--km-surface, #ffffff); stroke: var(--km-line, #cbd5e1); stroke-width: 1.5; }
+    .api { fill: var(--km-api-low, #e8f8fb); stroke: var(--km-api, #1e7a88); stroke-width: 2; }
+    .chat { fill: var(--km-chat-low, #f1f5f9); stroke: var(--km-chat, #002a4c); stroke-width: 2; }
+    .wire { fill: none; stroke: var(--km-wire, #64748b); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .head { fill: var(--km-wire, #64748b); }
+    .t { fill: var(--km-text, #002a4c); font-size: 16px; font-weight: 600; }
+    .s { fill: var(--km-muted, #475569); font-size: 13px; }
+    .use-api { fill: var(--km-api, #1e7a88); font-size: 13px; font-weight: 600; }
+    .use-chat { fill: var(--km-chat, #002a4c); font-size: 13px; font-weight: 600; }
+    .rule-api { stroke: var(--km-api, #1e7a88); stroke-opacity: 0.35; }
+    .rule-chat { stroke: var(--km-chat, #002a4c); stroke-opacity: 0.25; }
+    @media (prefers-color-scheme: dark) {
+      .box { fill: var(--km-surface, #001d36); stroke: var(--km-line, #1a4a6e); }
+      .api { fill: var(--km-api-low, #002a4c); stroke: var(--km-api, #5ab5c2); }
+      .chat { fill: var(--km-chat-low, #0f3a5c); stroke: var(--km-chat, #cbd5e1); }
+      .wire { stroke: var(--km-wire, #94a3b8); }
+      .head { fill: var(--km-wire, #94a3b8); }
+      .t { fill: var(--km-text, #ffffff); }
+      .s { fill: var(--km-muted, #cbd5e1); }
+      .use-api { fill: var(--km-api, #5ab5c2); }
+      .use-chat { fill: var(--km-chat, #cbd5e1); }
+      .rule-api { stroke: var(--km-api, #5ab5c2); }
+      .rule-chat { stroke: var(--km-chat, #cbd5e1); }
+    }
+  </style>
+
+  <!-- Sponsor's billing code -->
+  <rect class="box" x="100" y="4" width="280" height="60" rx="10"/>
+  <text class="t" x="240" y="30" text-anchor="middle">Sponsor's billing code</text>
+  <text class="s" x="240" y="50" text-anchor="middle">A grant, department, or course budget</text>
+
+  <path class="wire" d="M240 64 V84"/>
+  <path class="head" d="M234 82 L240 92 L246 82 Z"/>
+
+  <!-- Team budget -->
+  <rect class="box" x="100" y="94" width="280" height="60" rx="10"/>
+  <text class="t" x="240" y="120" text-anchor="middle">Team budget</text>
+  <text class="s" x="240" y="140" text-anchor="middle">The Sponsor splits it across members</text>
+
+  <!-- Split -->
+  <path class="wire" d="M240 154 V170 M120 170 H360 M120 170 V186 M360 170 V186"/>
+  <path class="head" d="M114 184 L120 194 L126 184 Z"/>
+  <path class="head" d="M354 184 L360 194 L366 184 Z"/>
+
+  <!-- API budget -->
+  <rect class="api" x="8" y="196" width="224" height="164" rx="10"/>
+  <text class="t" x="120" y="224" text-anchor="middle">API budget</text>
+  <text class="s" x="120" y="246" text-anchor="middle">A spending cap.</text>
+  <text class="s" x="120" y="264" text-anchor="middle">Billed only for what's used.</text>
+  <line class="rule-api" x1="28" y1="284" x2="212" y2="284"/>
+  <text class="use-api" x="120" y="308" text-anchor="middle">Used in Claude Code,</text>
+  <text class="use-api" x="120" y="326" text-anchor="middle">Codex, scripts, and apps</text>
+
+  <!-- Chat balance -->
+  <rect class="chat" x="248" y="196" width="224" height="164" rx="10"/>
+  <text class="t" x="360" y="224" text-anchor="middle">Chat balance</text>
+  <text class="s" x="360" y="246" text-anchor="middle">Extra chat credit.</text>
+  <text class="s" x="360" y="264" text-anchor="middle">Billed in full when funded.</text>
+  <line class="rule-chat" x1="268" y1="284" x2="452" y2="284"/>
+  <text class="use-chat" x="360" y="308" text-anchor="middle">Used in the regular</text>
+  <text class="use-chat" x="360" y="326" text-anchor="middle">campusGenAI chat</text>
+</svg>

@@ -6,7 +6,7 @@ description: Configure Claude Code, Anthropic's CLI coding agent, to use campusG
 [Claude Code](https://www.anthropic.com/claude-code) is Anthropic's command-line coding agent. This page walks you through pointing it at KeyMaker so it runs on campusGenAI's models, billed to your sponsor's funding.
 
 :::note[Find your KeyMaker URL]
-Each institution's deployment has its own KeyMaker URL. Find yours in the **KeyMaker portal in campusGenAI** (profile picture → **KeyMaker**), in the **API Endpoint** box. Use that value everywhere these instructions show `YOUR_KEYMAKER_URL`.
+Each institution's deployment has its own KeyMaker URL. Find yours in the **KeyMaker portal in campusGenAI** (the **key icon** in the left side menu), in the **API Endpoint** box. If you belong to more than one team, select the team's card first: each team has its own key. Use that value everywhere these instructions show `YOUR_KEYMAKER_URL`.
 :::
 
 ## Prerequisites

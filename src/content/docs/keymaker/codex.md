@@ -6,7 +6,7 @@ description: Configure the OpenAI Codex CLI to use campusGenAI models through Ke
 [OpenAI Codex CLI](https://github.com/openai/codex) is OpenAI's command-line coding agent. Because KeyMaker is OpenAI-compatible, you can point Codex at KeyMaker and run it against campusGenAI's models — billed to your sponsor's funding — instead of a personal OpenAI account.
 
 :::note[Find your KeyMaker URL]
-Each institution's deployment has its own KeyMaker URL. Find yours in the **KeyMaker portal in campusGenAI** (profile picture → **KeyMaker**), in the **API Endpoint** box. Use that value everywhere these instructions show `YOUR_KEYMAKER_URL`, and keep the `/v1` suffix the examples add to it.
+Each institution's deployment has its own KeyMaker URL. Find yours in the **KeyMaker portal in campusGenAI** (the **key icon** in the left side menu), in the **API Endpoint** box. If you belong to more than one team, select the team's card first: each team has its own key. Use that value everywhere these instructions show `YOUR_KEYMAKER_URL`, and keep the `/v1` suffix the examples add to it.
 :::
 
 ## Prerequisites
@@ -101,7 +101,7 @@ curl YOUR_KEYMAKER_URL/v1/models \
   -H "Authorization: Bearer $KEYMAKER_API_KEY"
 ```
 
-Make note of the model name you want to use (for example, `gpt5`).
+Make note of the model name you want to use (for example, `gpt5`). You can also see the exact names in the **Available Models** list in your KeyMaker portal.
 
 ## Configure Codex
 

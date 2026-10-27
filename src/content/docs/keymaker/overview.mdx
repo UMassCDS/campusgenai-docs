@@ -1,0 +1,99 @@
+---
+title: KeyMaker Overview
+description: What KeyMaker is — Sponsor-funded API access and extra chat for campusGenAI, billed to a grant, department, or course budget.
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import KeyMakerFlow from '../../../components/KeyMakerFlow.astro';
+
+**KeyMaker** lets a faculty or staff **Sponsor** pay for their team's campusGenAI usage from their own funding source, such as a grant, department, or course budget. Sponsors use that funding for two things:
+
+<div class="km-paths">
+<CardGrid>
+	<Card title="API access" icon="laptop">
+		An API key for using campusGenAI's models outside the chat: in coding agents like
+		[Claude Code](/keymaker/claude-code/) and [Codex](/keymaker/codex/), in scripts, and in
+		custom applications. Billed only for what's used, up to a cap the Sponsor sets.
+	</Card>
+	<Card title="Extra chat" icon="comment">
+		More chat credit in the regular campusGenAI chat, on top of your default balance. No coding
+		or API use needed. Useful when a lab, course, or project needs more chat than the
+		standard allocation covers.
+	</Card>
+</CardGrid>
+</div>
+
+A Sponsor can fund either or both for each team member. Most teams use KeyMaker for API access today, but a team can also exist only to fund extra chat.
+
+**For example:**
+
+- A PI with a research grant funds API keys for the graduate students on the project. Each student uses Claude Code against their own budget, and the cost is billed to the grant.
+- An instructor funds extra chat for everyone in a course, so students can work on assignments with more capable models than the standard allocation includes.
+- A staff office funds both for a small team: API access for a developer building an internal tool, and extra chat for colleagues who test and use it.
+
+:::note[Availability]
+KeyMaker is in beta and may not be broadly available at every institution yet.
+
+- **Interested in campusGenAI?** Reach out through the [contact form on our main site](https://www.campusgenai.org/contact).
+- **Already a user and want KeyMaker access?** Contact your institution's platform admin.
+:::
+
+## How it works
+
+<KeyMakerFlow />
+
+1. **A Sponsor registers a team** with a billing code and a requested budget. Registration is reviewed and approved before the team is created.
+2. **Members request to join** the team, and the Sponsor approves them.
+3. **The Sponsor allocates funds** to each member, as an API budget, a chat balance, or both.
+4. **Usage is billed monthly** to the team's billing code, so costs land on the right grant or budget.
+
+People can belong to more than one team, with a different role on each, and each team has its own key. For the billing details, see [Billing & budgets](/keymaker/billing/).
+
+## API access
+
+An API key lets you call campusGenAI's models from your own tools:
+
+- **Coding agents**: [Claude Code](/keymaker/claude-code/) and [Codex](/keymaker/codex/)
+- **Scripts and research workflows**: batch processing, data analysis, AI pipelines. See [Python API access](/keymaker/python/).
+- **Custom applications**: institutional tools and apps built on campusGenAI's models
+
+You get a key and a base URL (the **API Endpoint**) from the KeyMaker page in campusGenAI. The base URL is a setting inside your tools, not a site you visit.
+
+**Want to try it first?** A free [trial key](/keymaker/getting-started/#path-c-free-trial-key) gives you a small amount of API usage for a limited time, with no Sponsor or approval needed. Trial keys are for API access only.
+
+## Extra chat
+
+campusGenAI users may have a default balance set by their institution, and different levels of access to models. When a team needs more, a Sponsor can fund a **chat balance** for each member. Members spend it in the regular chat by switching to the team's wallet. Nothing to install or configure.
+
+Sponsor-funded chat can be used with **all available models**, even ones your institution's standard access restricts. It follows the Sponsor's settings, not the institution's: it doesn't reset on the institution's refill schedule, and the Sponsor controls model access. See [Credits & tokens](/platform/credits-and-tokens/#team-wallets).
+
+Joining a team currently also issues an API key, but you don't have to use it.
+
+## Who it's for
+
+- **Sponsors**: faculty and staff with a grant, department, or course budget who want to fund AI use for themselves, a lab, a class, or a project team
+- **Researchers and developers**: anyone building pipelines, tools, or applications, or using coding agents
+- **Students and staff on a team**: anyone whose Sponsor funds their API access or extra chat
+
+## Why KeyMaker
+
+- **Funding lands in the right place.** Usage is tracked per team and billed to that team's billing code, so grant-funded work is charged to the grant.
+- **Sponsors stay in control.** They approve who joins, set each member's budget, and can add or remove funds.
+- **Same secure platform.** KeyMaker runs on the same institutionally governed infrastructure as the chat: an AWS secure landing zone, approved for Level 3 data, with no data used to train models.
+- **Same models.** The models available in campusGenAI chat are available through the API. See [Model Comparison](/models/model-comparison/).
+- **No extra burden on the central budget.** Sponsors bring their own funding.
+
+## Get started
+
+- **Try the API:** get a [free trial key](/keymaker/getting-started/#path-c-free-trial-key)
+- **Join a team:** [request to join your Sponsor's team](/keymaker/getting-started/#path-b-join-your-sponsors-team)
+- **Fund a team:** [register as a Sponsor](/keymaker/getting-started/#path-a-register-as-a-team-sponsor)
+
+---
+
+## Need help?
+
+- **Get help:** [Contact us](/get-help/)
+- **About campusGenAI:** [Main site](https://campusgenai.org)
+
+Your interface may look slightly different depending on your institution's deployment.
