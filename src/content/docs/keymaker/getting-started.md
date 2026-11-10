@@ -143,7 +143,8 @@ Next: [Billing & budgets](/keymaker/billing/) · [Portal tour](/keymaker/portal/
 9. Copy your key and endpoint, then follow a setup guide:
    [API usage](/keymaker/python/) ·
    [Connect to Claude Code](/keymaker/claude-code/) ·
-   [Connect to Codex](/keymaker/codex/)
+   [Connect to Codex](/keymaker/codex/) ·
+   [Connect to Microsoft Office](/keymaker/microsoft-office/)
 
 To join another team later, repeat these steps. Each team gives you a separate key.
 
@@ -166,7 +167,8 @@ anyone allocates a budget.
 3. Copy your key and endpoint, then follow a setup guide:
    [API usage](/keymaker/python/) ·
    [Connect to Claude Code](/keymaker/claude-code/) ·
-   [Connect to Codex](/keymaker/codex/)
+   [Connect to Codex](/keymaker/codex/) ·
+   [Connect to Microsoft Office](/keymaker/microsoft-office/)
 
 What you get:
 

@@ -66,6 +66,10 @@ Your key is stored in `~/.claude/settings.json` as `ANTHROPIC_AUTH_TOKEN`. On Wi
 
 The next time you start `claude`, it picks up the new key. See [Claude Code Setup](/keymaker/claude-code/) if you need the full configuration.
 
+### Microsoft Office add-in
+
+The Claude add-in keeps the key you entered when you connected. In each Office app where you use it, open the account menu in the Claude side panel, select **Logout**, then connect again with your new key. See [Microsoft Office Setup](/keymaker/microsoft-office/#update-or-rotate-your-key).
+
 ### Codex and Python (the `KEYMAKER_API_KEY` environment variable)
 
 Codex and the Python SDK both read your key from the `KEYMAKER_API_KEY` environment variable. Update it in one place and both pick up the change.
