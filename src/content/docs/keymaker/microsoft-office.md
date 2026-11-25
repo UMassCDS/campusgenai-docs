@@ -9,11 +9,51 @@ The [Claude add-in](https://claude.com/docs/office-agents/overview) puts Claude 
 
 - **A Microsoft 365 desktop app** (Word, Excel, or PowerPoint) signed in with your university account.
 - **Your KeyMaker gateway URL.** In campusGenAI, open KeyMaker (the **key icon** in the left side menu) and copy the value in the **API Endpoint** box. If you belong to more than one team, select the team's card first.
-- **Your personal KeyMaker API key.** It's on the same KeyMaker screen. The add-in asks for it in a field labeled **Token**, but it's the same key. If you don't have one, see [Getting Started](/keymaker/getting-started/).
+- **Your personal KeyMaker API key.** It's on the same KeyMaker screen. The add-in asks for it in a field labeled **Token**, but it's the same key. If you don't have one, see [Getting Started](/keymaker/getting-started/). If you can't copy it from KeyMaker, see [Find your API key](#find-your-api-key).
 
 :::caution[Treat your key like a password]
 Anyone with your key can use models billed to your sponsor's funding. Never share it or paste it into documents, email, or chat. See [security best practices](/keymaker/usage/#security-best-practices).
 :::
+
+### Find your API key
+
+**New to KeyMaker?** Copy your key from the KeyMaker screen in campusGenAI and paste it straight into the add-in. If you can't copy it there, select **Regenerate Key** to get a new one. Since you haven't used the old key anywhere yet, nothing else needs updating.
+
+If you've used your key in another tool, it's probably saved on your computer. Print it in a terminal, then copy it.
+
+1. **Check the `KEYMAKER_API_KEY` environment variable.** This works if you ever saved your key as an environment variable, as the [Codex](/keymaker/codex/) and [Python](/keymaker/python/) guides do.
+
+   - **macOS / Linux:**
+
+     ```bash
+     echo $KEYMAKER_API_KEY
+     ```
+
+   - **Windows (PowerShell):**
+
+     ```powershell
+     echo $env:KEYMAKER_API_KEY
+     ```
+
+2. **If that prints nothing and you set up [Claude Code](/keymaker/claude-code/)**, check its settings file, where the key is saved as `ANTHROPIC_AUTH_TOKEN`:
+
+   - **macOS / Linux:**
+
+     ```bash
+     grep ANTHROPIC_AUTH_TOKEN ~/.claude/settings.json
+     ```
+
+   - **Windows (PowerShell):**
+
+     ```powershell
+     Select-String ANTHROPIC_AUTH_TOKEN "$env:USERPROFILE\.claude\settings.json"
+     ```
+
+   Copy only the value between the quotes after `ANTHROPIC_AUTH_TOKEN`.
+
+Clear your terminal afterward (`clear` on macOS/Linux, `cls` in PowerShell) so the key isn't left on screen.
+
+**Can't find it anywhere?** Select **Regenerate Key** in KeyMaker to get a new one. This turns off your old key right away, so you'll need to update every tool that uses it. See [Rotating your key](/keymaker/rotating-your-key/).
 
 The screenshots show PowerPoint for Mac. The steps are the same in Word and Excel.
 
