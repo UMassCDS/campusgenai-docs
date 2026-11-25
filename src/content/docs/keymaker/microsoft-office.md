@@ -113,13 +113,6 @@ Click the **Claude** button on the Home ribbon. If it isn't there, click **Add-i
 
 <img src="/keymaker/office/07-my-add-ins.png" alt="The Claude button on the ribbon, and Claude under My Add-ins in the add-ins panel" width="480" />
 
-## Good to know
-
-- **Where your data goes:** your prompts and the document content Claude reads go to campusGenAI through KeyMaker, not to Anthropic.
-- **Cost:** Claude reads your document to answer, so large files use more tokens. Watch your **API Budget** in KeyMaker.
-- **Not available through KeyMaker:** working across apps in one conversation, dictation, and adding your own connectors.
-- **Outlook:** Claude for Outlook is a separate add-in that your institution's Microsoft 365 administrator must approve. Ask your IT team whether it's available.
-
 ## Change your key
 
 The add-in keeps the old key after you [rotate it](/keymaker/rotating-your-key/). In each app, open the account menu in the Claude panel, select **Logout**, and connect again with the new key.
