@@ -35,12 +35,20 @@ A rotated key only works once you've updated it **everywhere you saved the old o
 
 ### Claude Code
 
-Your key is stored in `~/.claude/settings.json` as `ANTHROPIC_AUTH_TOKEN`.
+Your key is stored in `~/.claude/settings.json` as `ANTHROPIC_AUTH_TOKEN`. On Windows, that's `%USERPROFILE%\.claude\settings.json`.
 
-1. Open the file in your text editor:
+1. Open the file in your text editor.
+
+   **macOS / Linux:**
 
    ```bash
    nano ~/.claude/settings.json
+   ```
+
+   **Windows (PowerShell):**
+
+   ```powershell
+   notepad "$env:USERPROFILE\.claude\settings.json"
    ```
 
 2. Replace the old key value with your new key, leaving `ANTHROPIC_BASE_URL` exactly as it already is:
@@ -54,9 +62,13 @@ Your key is stored in `~/.claude/settings.json` as `ANTHROPIC_AUTH_TOKEN`.
    }
    ```
 
-3. Save the file. In `nano`, that's `Ctrl + O` then `Enter`, and exit with `Ctrl + X`.
+3. Save the file. In `nano`, that's `Ctrl + O` then `Enter`, and exit with `Ctrl + X`. In Notepad, press `Ctrl + S`.
 
 The next time you start `claude`, it picks up the new key. See [Claude Code Setup](/keymaker/claude-code/) if you need the full configuration.
+
+### Microsoft Office add-in
+
+The Claude add-in keeps the key you entered when you connected. In each Office app where you use it, open the account menu in the Claude side panel, select **Logout**, then connect again with your new key. See [Microsoft Office Setup](/keymaker/microsoft-office/#change-your-key).
 
 ### Codex and Python (the `KEYMAKER_API_KEY` environment variable)
 

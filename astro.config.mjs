@@ -67,6 +67,7 @@ export default defineConfig({
 						{ label: 'Portal Tour', slug: 'keymaker/portal' },
 						{ label: 'Claude Code Setup', slug: 'keymaker/claude-code' },
 						{ label: 'OpenAI Codex Setup', slug: 'keymaker/codex' },
+						{ label: 'Microsoft Office Setup', slug: 'keymaker/microsoft-office' },
 						{ label: 'Python API Access', slug: 'keymaker/python' },
 						{ label: 'Rotating Your Key', slug: 'keymaker/rotating-your-key' },
 						{ label: 'Usage & Best Practices', slug: 'keymaker/usage' },
